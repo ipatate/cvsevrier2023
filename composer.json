@@ -1,0 +1,19 @@
+{
+    "name": "patrickfaramaz/press-wind",
+    "description": "starter theme WordPress with Vite.js and Tailwind",
+    "authors": [
+        {
+            "name": "ipatate",
+            "email": "faramazpat@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "tightenco/duster": "^1.1",
+        "pestphp/pest": "^2.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
