@@ -20,6 +20,10 @@ if (file_exists(dirname(__FILE__) . '/inc/pwa_head.php')) {
   include dirname(__FILE__) . '/inc/pwa_head.php';
 }
 
+// acf
+require_once dirname(__FILE__) . '/inc/acf.php';
+require_once dirname(__FILE__) . '/inc/acf-config.php';
+
 // post type
 if (file_exists(dirname(__FILE__) . '/post-type/team.php')) {
   include dirname(__FILE__) . '/post-type/team.php';
@@ -53,3 +57,40 @@ load_assets('press-wind', dirname(__FILE__) . '', '3000');
  * init assets admin
  */
 load_assets('press-wind-admin', dirname(__FILE__) . '/admin', '4444', true);
+
+
+
+/** others settings */
+
+/**
+ * sortable plugin
+ */
+add_filter(
+  'simple_page_ordering_is_sortable',
+  function ($sortable, $post_type) {
+    if ('team' === $post_type) {
+      return true;
+    }
+    return $sortable;
+  },
+  10,
+  2
+);
+
+
+add_filter('simple_page_ordering_is_sortable', function ($sortable, $post_type) {
+  if ('page' === $post_type) {
+    return false;
+  }
+  return $sortable;
+}, 10, 2);
+
+
+/** Excerpt  */
+add_filter('excerpt_length', function () {
+  return 10;
+}, 999);
+
+add_filter('excerpt_more', function () {
+  return '...';
+}, 999);
