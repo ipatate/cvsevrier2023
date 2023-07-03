@@ -1,18 +1,18 @@
 body {
-  background: #aab5e7;
+  background: #fefefe;
 }
 
 /* Logo */
 #login h1 a,
 .login h1 a {
-  background-image: url('../media/icon.svg');
+  width: 100%;
+  background-image: url('../media/logo.png');
   background-size: contain;
 }
 
 #login form,
 .login form {
-  background-color: #aab5e7;
-  border: 0;
+  background-color: #f9f9f9;
 }
 
 #login form label,
@@ -22,24 +22,24 @@ body {
 
 /* Bouton */
 .wp-core-ui .button-primary {
-  background: rgb(190, 24, 93);
-  border-color: rgb(190, 24, 93);
+  background: #00a7bf;
+  border-color: #00a7bf;
 }
 
 .wp-core-ui .button-primary:hover {
-  background: rgb(156, 17, 75);
-  border-color: rgb(163, 19, 79);
+  background: #027384;
+  border-color: #027384;
 }
 
 /* Liens */
 .login #backtoblog a,
 .login #nav a,
 .privacy-policy-page-link a {
-  color: #bbbfce;
+  color: #00a7bf;
 }
 
 .login #backtoblog a:hover,
 .login #nav a:hover,
 .privacy-policy-page-link a:hover {
-  color: rgb(190, 24, 93);
+  color: #027384;
 }
