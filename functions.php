@@ -20,6 +20,15 @@ if (file_exists(dirname(__FILE__) . '/inc/pwa_head.php')) {
   include dirname(__FILE__) . '/inc/pwa_head.php';
 }
 
+// post type
+if (file_exists(dirname(__FILE__) . '/post-type/team.php')) {
+  include dirname(__FILE__) . '/post-type/team.php';
+}
+if (file_exists(dirname(__FILE__) . '/post-type/event.php')) {
+  include dirname(__FILE__) . '/post-type/event.php';
+}
+
+
 /**
  * Theme setup.
  */
@@ -31,29 +40,7 @@ function setup()
 
   add_theme_support('post-thumbnails');
 
-  // add_theme_support('html5', [
-  //   'comment-form',
-  //   'comment-list',
-  //   'gallery',
-  //   'caption',
-  // ]);
-
-  // add_theme_support('post-formats', [
-  //   'aside',
-  //   'image',
-  //   'video',
-  //   'quote',
-  //   'link',
-  //   'gallery',
-  //   'audio',
-  // ]);
-
-  // register_nav_menus(array(
-  // 'primary'   => __('Primary Menu', 'press-wind'),
-  // 'secondary' => __('Secondary Menu', 'press-wind')
-  // ));
-
-  load_theme_textdomain('press-wind', get_template_directory() . '/languages');
+  load_theme_textdomain('cvsevrier', get_template_directory() . '/languages');
 }
 
 add_action('after_setup_theme', __NAMESPACE__ . '\setup');
