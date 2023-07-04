@@ -1,0 +1,14 @@
+{
+  "blockVersion": 2,
+  "name": "cvsevrier/logo-cvsevrier",
+  "version": "0.1.0",
+  "title": "Logo CVSevrier",
+  "category": "cvsevrier",
+  "icon": "wordpress",
+  "description": "Logo CVSevrier",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./index.php"
+  },
+  "textdomain": "cvsevrier"
+}

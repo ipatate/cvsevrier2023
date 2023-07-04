@@ -1,0 +1,17 @@
+{
+  "blockVersion": 2,
+  "name": "cvsevrier/burger-btn",
+  "version": "0.1.0",
+  "title": "Burger Button",
+  "category": "cvsevrier",
+  "icon": "menu-alt3",
+  "description": "Burger Button for CVSevrier theme",
+  "supports": {
+    "html": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./index.php"
+  },
+  "textdomain": "cvsevrier"
+}

@@ -37,6 +37,11 @@
           "slug": "light-blue"
         },
         {
+          "color": "#1e515d",
+          "name": "Dark Blue",
+          "slug": "dark-blue"
+        },
+        {
           "color": "#9E9E9D",
           "name": "Gray",
           "slug": "text-gray"
@@ -47,7 +52,7 @@
           "slug": "primary"
         },
         {
-          "color": "#FEF8F4",
+          "color": "#FEF4F4",
           "name": "Secondary",
           "slug": "secondary"
         },
@@ -230,8 +235,8 @@
       ]
     },
     "layout": {
-      "contentSize": "1094px",
-      "wideSize": "1320px"
+      "contentSize": "1090px",
+      "wideSize": "1275px"
     }
   },
   "styles": {
@@ -374,7 +379,12 @@
       },
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--blue-logo)"
+          "text": "var(--wp--preset--color--light-blue)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--dark-blue)"
+          }
         }
       }
     },

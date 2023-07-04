@@ -1,0 +1,11 @@
+.cvs-social-links {
+  @apply flex items-center justify-center p-0 m-0 list-none;
+}
+
+.cvs-social-links .social-link {
+  @apply flex items-center justify-center mx-3 w-9 h-9 lg:w-7 lg:h-7 md:mx-3;
+}
+
+.cvs-social-links .social-link a {
+  @apply flex items-center justify-center w-full h-full;
+}

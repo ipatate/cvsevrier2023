@@ -1,13 +1,20 @@
-@import './settings/variables.css';
-
 @import 'tailwindcss/base';
 
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
 
-/** GLOBAL */
-@import './has.css';
+@import './helpers.css';
 
-/** DEFAULT FOR EXAMPLE */
-@import './default.css';
+/** layout */
+@import './layout.css';
+@import './block-styles.css';
+@import './components/header.css';
+@import './components/footer.css';
+
+/** components */
+/* @import './components/hero.css'; */
+@import './components/carousel.css';
+
+/** Flickity */
+@import 'flickity/dist/flickity.min.css';

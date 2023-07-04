@@ -1,0 +1,53 @@
+.site-footer {
+  @apply relative py-14 md:py-20 bg-light-blue;
+}
+
+.footer-site-wrapper {
+  @apply flex flex-col items-center mx-auto md:items-stretch max-w-wide bg-light-blue md:flex-row;
+}
+
+.footer-site-wrapper > div.wp-block-group {
+  @apply flex flex-col items-center justify-start w-full px-4 md:w-auto;
+}
+
+/** logo */
+.footer-site-wrapper > div:first-child {
+  @apply flex flex-col items-center;
+}
+.footer-site-wrapper .site-logo-wrapper {
+  @apply relative z-10 flex items-center justify-center object-cover w-56 h-20 p-0 mx-0 mb-6 text-center md:mb-4;
+}
+
+.footer-site-wrapper .site-logo-wrapper svg {
+  @apply w-full h-full;
+}
+
+.footer-site-wrapper .site-logo-wrapper svg g:first-child path {
+  @apply fill-white;
+}
+
+/** social links */
+.footer-site-wrapper .cvs-social-links {
+  @apply relative z-10 justify-start;
+}
+
+.footer-site-wrapper .cvs-social-links .social-link a {
+  @apply text-white hover:text-dark-blue;
+}
+
+.footer-site-wrapper > div {
+  @apply flex-1 my-6;
+}
+
+/** navigation */
+.footer-site-wrapper .wp-block-navigation {
+  @apply relative z-10 w-full;
+}
+
+.footer-site-wrapper .wp-block-navigation ul li {
+  @apply my-0.5;
+}
+
+.footer-site-wrapper .wp-block-navigation ul li a {
+  @apply text-white hover:underline;
+}

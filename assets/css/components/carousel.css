@@ -1,0 +1,37 @@
+.gm-carousel-grouped .flickity-button {
+  @apply hidden lg:block;
+}
+
+.gm-block-carousel_wrapper {
+  @apply relative h-screen w-full min-h-[45rem] pb-14 max-h-[800px];
+}
+
+.gm-block-carousel_item {
+  @apply relative h-screen w-full min-h-[45rem] overflow-hidden after:block after:bg-black after:opacity-20 after:absolute after:content-[''] after:inset-0 after:w-full after:h-full after:z-0 max-h-[800px];
+}
+
+.gm-block-carousel_item img {
+  @apply object-cover object-center w-full h-full;
+}
+
+.gm-block-carousel_item > .wp-block-group {
+  @apply absolute top-0 bottom-0 z-10 flex flex-col items-start justify-center h-full px-4 mx-auto max-w-content xl:w-7/12;
+}
+
+@media screen and (min-width: 1094px) {
+  .gm-block-carousel_item > .wp-block-group {
+    left: calc((100vw - var(--wp--style--global--content-size)) / 2);
+  }
+}
+
+.gm-block-carousel_item > .wp-block-group > .wp-block-heading {
+  @apply w-full p-0 text-5xl text-white lg:text-6xl;
+}
+
+.gm-block-carousel_item > .wp-block-group > p {
+  @apply w-full text-lg text-white;
+}
+
+.gm-block-carousel_item > .wp-block-group > .wp-block-button {
+  @apply pt-4;
+}

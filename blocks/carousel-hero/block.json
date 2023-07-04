@@ -1,0 +1,17 @@
+{
+    "blockVersion": 2,
+    "name": "cvsevrier/carousel-hero",
+    "version": "0.1.0",
+    "title": "Carousel Hero",
+    "category": "cvsevrier",
+    "icon": "format-gallery",
+    "description": "Carousel Hero for CVSevrier theme",
+    "supports": {
+        "html": false
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "./index.php"
+    },
+    "textdomain": "cvsevrier"
+}

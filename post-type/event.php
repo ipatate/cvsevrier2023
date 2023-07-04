@@ -39,6 +39,8 @@ function gm_event_custom_post_type()
   ]);
 }
 
+add_action('init', __NAMESPACE__ . '\gm_event_custom_post_type');
+
 /*
  * Add columns to events post list
  */
@@ -48,9 +50,8 @@ function add_acf_columns($columns)
     'date_event' => __('Date Event'),
   ));
 }
-add_filter('manage_events_posts_columns', 'add_acf_columns');
+add_filter('manage_events_posts_columns', __NAMESPACE__ . '\add_acf_columns');
 
-add_action('init', __NAMESPACE__ . '\gm_event_custom_post_type');
 
 /*
  * Add columns to events post list

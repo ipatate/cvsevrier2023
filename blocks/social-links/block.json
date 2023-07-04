@@ -1,0 +1,17 @@
+{
+    "blockVersion": 2,
+    "name": "cvsevrier/social-links",
+    "version": "0.1.0",
+    "title": "Social Links",
+    "category": "cvsevrier",
+    "icon": "share",
+    "description": "Social Links for CVSevrier theme",
+    "supports": {
+        "html": false
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "./index.php"
+    },
+    "textdomain": "cvsevrier"
+}

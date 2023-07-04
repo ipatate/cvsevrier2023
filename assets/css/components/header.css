@@ -1,0 +1,306 @@
+.site-header {
+  @apply fixed top-0 left-0 right-0 z-[10000] h-24 transition-colors duration-500 bg-secondary;
+}
+
+body.admin-bar .site-header {
+  @apply top-8;
+}
+
+.header-site-wrapper {
+  @apply flex items-center h-24 mx-auto lg:px-4 max-w-wide xl:px-0;
+}
+
+/** set padding top for body */
+body {
+  @apply pt-24;
+}
+
+body.page-template-page-hero,
+body.single,
+body.home {
+  @apply pt-0;
+}
+
+/** logo */
+
+.header-site-wrapper .site-logo-wrapper {
+  @apply relative z-20 flex items-center justify-center object-cover w-40 h-16 ml-2 md:w-48 md:h-20 lg:ml-0;
+}
+
+.header-site-wrapper-simple .site-logo-wrapper {
+  @apply relative z-20 flex items-center justify-center object-cover w-40 h-16 ml-2 md:w-48 md:h-24 lg:ml-0;
+}
+
+.header-site-wrapper .site-logo-wrapper svg,
+.header-site-wrapper-simple .site-logo-wrapper svg {
+  @apply w-full h-full;
+}
+
+/** social links */
+
+.header-site-wrapper .cvs-social-links {
+  @apply py-5;
+}
+
+.header-site-wrapper .cvs-social-links .social-link a {
+  @apply text-dark-blue hover:text-light-blue;
+}
+
+/**
+*
+* bloc nav => navigation, lang switcher and portal
+*/
+
+.header-site-wrapper .site-navigation {
+  @apply flex-1;
+}
+
+/** is open nav mobile */
+.header-site-wrapper .site-navigation.is-open {
+  @apply overflow-visible;
+  height: 100dvh;
+  height: 100vh;
+}
+
+.header-site-wrapper .site-navigation:not(.is-open) {
+  @apply h-0 overflow-hidden lg:h-20 lg:overflow-visible;
+}
+
+/** desktop */
+.header-site-wrapper .site-navigation {
+  @apply fixed top-0 left-0 right-0 z-10 flex flex-col items-center justify-start w-full m-0 mt-0 lg:flex-row lg:relative lg:top-0 lg:flex-1 lg:overflow-visible lg:h-20 bg-secondary lg:bg-transparent;
+}
+
+/* main navigation */
+.header-site-wrapper .site-navigation .main-navigation {
+  @apply justify-start w-full lg:flex-1 px-7 pt-32 lg:p-0 lg:h-20 lg:w-auto h-[calc(94vh_-_12rem)] overflow-y-auto lg:overflow-visible;
+}
+
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__responsive-container {
+  @apply lg:w-auto;
+}
+
+/** ul navigation */
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container {
+  @apply flex items-start justify-start w-full h-full border-0 border-transparent lg:px-6 lg:mx-4 lg:w-auto lg:flex-row lg:items-center;
+}
+
+.wp-block-navigation:not(.has-background)
+  .wp-block-navigation__submenu-container {
+  @apply border-0 border-transparent lg:shadow;
+}
+
+/** li navigation */
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  > li {
+  @apply lg:mx-[1%] mx-3 my-3 lg:my-0;
+}
+
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  li {
+  @apply items-start w-full lg:w-auto lg:items-center lg:flex-1 lg:text-center lg:leading-5;
+}
+
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  li
+  a {
+  @apply hover:text-dark-blue;
+}
+
+/** child submenu */
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  li.has-child {
+  @apply flex-col lg:flex-row;
+}
+
+/** child submenu button */
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  li.has-child
+  button {
+  @apply hidden lg:block lg:-mt-1;
+}
+
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  li.has-child
+  button
+  svg {
+  @apply stroke-dark-blue;
+}
+
+.site-header.has-hero
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  a {
+  @apply hover:text-dark-blue;
+}
+
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  li.has-child
+  .wp-block-navigation__submenu-container
+  a {
+  @apply text-left;
+}
+
+@media (max-width: 1023px) {
+  .header-site-wrapper
+    .site-navigation
+    .main-navigation
+    .wp-block-navigation__container
+    li.has-child
+    .wp-block-navigation__submenu-container {
+    @apply static left-0 visible w-full h-auto overflow-visible bg-transparent border-0 border-transparent opacity-100 top-10;
+  }
+}
+
+/** burger btn */
+.header-site-wrapper .navigation-btn {
+  @apply relative flex items-center justify-center w-20 h-20 ml-auto bg-transparent lg:hidden;
+}
+
+.burger-btn {
+  @apply relative z-20 w-10 h-6 bg-transparent border-none;
+}
+
+.burger-btn span {
+  @apply absolute h-0.5 bg-dark-blue w-full transition-all opacity-100 rotate-0;
+}
+
+.burger-btn span:nth-child(1) {
+  @apply top-0 left-0;
+}
+
+.burger-btn span:nth-child(2) {
+  @apply top-[11px] right-0;
+}
+
+.burger-btn span:nth-child(3) {
+  @apply bottom-0 left-0 w-8/12;
+}
+
+/** is open */
+
+.burger-btn.is-open span:nth-child(1) {
+  @apply top-[14px] rotate-45;
+}
+.burger-btn.is-open span:nth-child(2) {
+  @apply opacity-0 -right-16;
+}
+.burger-btn.is-open span:nth-child(3) {
+  @apply top-[14px] -rotate-45 w-full;
+}
+
+/** page with hero */
+.site-header.has-hero {
+  @apply bg-secondary/80;
+  backdrop-filter: blur(15px);
+}
+
+body:not(.is-scrolled) .site-header.has-hero {
+  @apply bg-white/10;
+  backdrop-filter: blur(5px);
+}
+
+body.is-scrolled .site-header {
+  @apply shadow-sm;
+}
+
+/** has admin bar */
+body.admin-bar .site-header.has-hero {
+  @apply top-8;
+}
+
+/** logo */
+body:not(.is-scrolled):not(.nav-is-open)
+  .site-header.has-hero
+  .site-logo
+  svg
+  g:first-child
+  path {
+  @apply fill-white;
+}
+
+body:not(.is-scrolled):not(.nav-is-open)
+  .site-header.has-hero
+  .burger-btn
+  span {
+  @apply bg-white;
+}
+
+body:not(.is-scrolled):not(.nav-is-open)
+  .site-header.has-hero
+  .cvs-social-links
+  .social-link
+  a {
+  @apply text-white hover:text-primary;
+}
+
+body:not(.is-scrolled)
+  .site-header.has-hero
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  a {
+  @apply lg:text-white lg:hover:text-primary;
+}
+
+body:not(.is-scrolled)
+  .site-header.has-hero
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  li.has-child
+  button
+  svg {
+  @apply stroke-white;
+}
+
+body:not(.is-scrolled)
+  .site-header.has-hero
+  .site-navigation
+  .wp-block-navigation:not(.has-background)
+  .wp-block-navigation__submenu-container {
+  @apply lg:bg-dark-blue/60 bg-secondary;
+  backdrop-filter: blur(15px);
+}
+
+body:not(.is-scrolled)
+  .site-header.has-hero
+  .site-navigation
+  .wp-block-navigation:not(.has-background)
+  .wp-block-navigation__submenu-container
+  a {
+  @apply lg:text-white lg:hover:text-gray-300;
+}
+
+/** social links */
+body:not(.is-scrolled) .site-header.has-hero .bart-social-links .social-link a {
+  @apply lg:text-white lg:hover:text-dark-blue;
+}

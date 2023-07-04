@@ -8,22 +8,28 @@ module.exports = {
   content: [
     // './**/*.{php,twig,html,json}',
     './assets/*.{js,jsx,ts,tsx,vue}',
+    // './ecommerce/app/src/**/*.{js,jsx,ts,tsx,vue}',
   ],
   safelist: [],
   theme: {
-    fontFamily: {
-      display: ['PlayfairDisplay'],
-      body: ['Roboto'],
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1095px',
+      xl: '1280px',
+      '2xl': '1536px',
     },
     extend: {
-      gridTemplateColumns: {
-        main: '8rem 1fr 8rem',
-        'main-small': '1rem 1fr 1rem',
-      },
       backgroundImage: (theme) => ({
-        'wp-performance': "url('/assets/media/wp-performance.png')",
+        'next-link': "url('/assets/media/next-link.svg')",
+        search: 'url(/assets/media/search.svg)',
+        next: "url('/assets/media/next.svg')",
+        previous: "url('/assets/media/previous.svg')",
       }),
     },
   },
-  plugins: [require('@_tw/themejson')(require('./theme.json'))],
+  plugins: [
+    require('@_tw/themejson')(require('./theme.json')),
+    // require('@tailwindcss/forms'),
+  ],
 }

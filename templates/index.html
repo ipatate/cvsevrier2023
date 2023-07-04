@@ -1,15 +1,107 @@
-<!-- wp:template-part {"slug":"header","className":"site-header"} /-->
+<!-- wp:template-part {"slug":"header","theme":"cvsevrier2023",
+"tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","className":"site-main"} -->
-<main class="wp-block-group site-main">
-  <!-- wp:group {"className":"main-content"} -->
-  <div class="wp-block-group main-content">
-    <!-- wp:post-title {"level":1,"textColor":"tertiary"} /-->
+<!-- wp:group {"tagName":"main", "className": "main-content"} -->
+<main class="wp-block-group main-content">
+  <!-- wp:group {"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group">
+    <!-- wp:query-title {"type":"archive",
+    "style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}}} /-->
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group {"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group">
+    <!-- wp:query {"queryId":4,"query":{"perPage":"15","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3},"className":"cvs-actu-list"} -->
+    <div class="wp-block-query cvs-actu-list">
+      <!-- wp:post-template -->
+      <!-- wp:post-featured-image {"isLink":true} /-->
 
-    <!-- wp:post-content /-->
+      <!-- wp:post-date /-->
+
+      <!-- wp:post-title {"isLink":true,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"2x-large"} /-->
+
+      <!-- wp:post-excerpt {"moreText":"Lire la suite"} /-->
+      <!-- /wp:post-template -->
+
+      <!-- wp:query-pagination -->
+      <!-- wp:query-pagination-previous /-->
+
+      <!-- wp:query-pagination-numbers /-->
+
+      <!-- wp:query-pagination-next /-->
+      <!-- /wp:query-pagination -->
+
+      <!-- wp:query-no-results -->
+      <!-- wp:paragraph {"placeholder":"Ajouter un texte ou des blocs qui s’afficheront lorsqu’une requête ne renverra aucun résultat."} -->
+      <p></p>
+      <!-- /wp:paragraph -->
+      <!-- /wp:query-no-results -->
+    </div>
+    <!-- /wp:query -->
+
+    <!-- wp:group {"className":"cvs-content-text-number"} -->
+    <div class="wp-block-group cvs-content-text-number">
+      <!-- wp:heading {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}}} -->
+      <h2
+        class="wp-block-heading"
+        style="margin-bottom: var(--wp--preset--spacing--20)"
+      >
+        Espace presse
+      </h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:group {"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group">
+        <!-- wp:group {"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group">
+          <!-- wp:image {"sizeSlug":"large"} -->
+          <figure class="wp-block-image size-large">
+            <img src="https://fakeimg.pl/630x480/" alt="" />
+          </figure>
+          <!-- /wp:image -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group">
+          <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group">
+            <!-- wp:paragraph -->
+            <p>
+              On parle de la Fondation dans les médias ! Retrouvez les
+              différents articles de presse et communiqués nous concernant.
+            </p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+            <div
+              class="wp-block-buttons"
+              style="margin-top: var(--wp--preset--spacing--20)"
+            >
+              <!-- wp:button -->
+              <div class="wp-block-button">
+                <a class="wp-block-button__link wp-element-button">
+                  Accéder aux articles
+                </a>
+              </div>
+              <!-- /wp:button -->
+            </div>
+            <!-- /wp:buttons -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:spacer -->
+    <div style="height: 100px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
   </div>
   <!-- /wp:group -->
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

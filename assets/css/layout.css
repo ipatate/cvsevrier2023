@@ -1,0 +1,55 @@
+.entry-content {
+  @apply min-h-[20vh];
+}
+
+::selection {
+  @apply text-white bg-dark-blue;
+}
+
+.main-content
+  > .is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+.main-content-simple
+  > .is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  @apply px-6 lg:px-0;
+}
+
+.main-content-simple {
+  @apply pb-20;
+}
+
+/** flickity */
+
+.cvs-carousel-grouped .flickity-button {
+  @apply hidden w-6 h-10 bg-transparent border-0 md:block hover:bg-transparent;
+}
+
+.cvs-carousel-grouped .flickity-button[disabled='true'],
+.gm-carousel-grouped .flickity-button[disabled='true'] {
+  @apply hidden;
+}
+
+.cvs-carousel-grouped .flickity-button svg {
+  @apply hidden;
+}
+
+.cvs-carousel-grouped .flickity-prev-next-button.previous {
+  @apply bg-center bg-no-repeat bg-contain border-0 -left-8 lg:-left-12 bg-previous w-9 h-9;
+}
+
+.cvs-carousel-grouped .flickity-prev-next-button.next {
+  @apply bg-center bg-no-repeat bg-contain border-0 -right-8 lg:-right-12 bg-next w-9 h-9;
+}
+
+.cvs-carousel-grouped .flickity-page-dots {
+  @apply mx-auto border-0 -bottom-10 max-w-none;
+}
+
+.cvs-carousel-grouped .flickity-page-dot {
+  @apply bg-gray-400 focus:outline-none active:outline-none;
+}
+
+.cvs-carousel-grouped .flickity-page-dots .is-selected {
+  /* @apply bg-primary; */
+}
