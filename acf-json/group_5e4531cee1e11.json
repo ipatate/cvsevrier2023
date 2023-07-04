@@ -1,0 +1,133 @@
+{
+    "key": "group_5e4531cee1e11",
+    "title": "Partner",
+    "fields": [
+        {
+            "key": "field_5e4531e79e6ce",
+            "label": "Partner Logo",
+            "name": "partner_logo",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Ajouter un élément",
+            "sub_fields": [
+                {
+                    "key": "field_5e4532099e6cf",
+                    "label": "Partner name",
+                    "name": "partner_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5e4531e79e6ce"
+                },
+                {
+                    "key": "field_5e45321e9e6d0",
+                    "label": "Partner link",
+                    "name": "partner_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_5e4531e79e6ce"
+                },
+                {
+                    "key": "field_5e4532399e6d1",
+                    "label": "partner logo",
+                    "name": "partner_logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": 500,
+                    "max_height": 500,
+                    "max_size": "0.3",
+                    "mime_types": "jpg,jpeg,png",
+                    "parent_repeater": "field_5e4531e79e6ce"
+                }
+            ],
+            "rows_per_page": 20
+        },
+        {
+            "key": "field_5e4559ade9c2b",
+            "label": "Title list partner",
+            "name": "title_list_partner",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Les partenaires du club",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-theme-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1688476889
+}

@@ -24,12 +24,19 @@ if (file_exists(dirname(__FILE__) . '/inc/pwa_head.php')) {
 require_once dirname(__FILE__) . '/inc/acf.php';
 require_once dirname(__FILE__) . '/inc/acf-config.php';
 
+
 // post type
 if (file_exists(dirname(__FILE__) . '/post-type/team.php')) {
   include dirname(__FILE__) . '/post-type/team.php';
 }
 if (file_exists(dirname(__FILE__) . '/post-type/event.php')) {
   include dirname(__FILE__) . '/post-type/event.php';
+}
+
+
+// blocks
+if (file_exists(dirname(__FILE__) . '/inc/blocks.php')) {
+  include dirname(__FILE__) . '/inc/blocks.php';
 }
 
 
