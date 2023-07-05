@@ -2,6 +2,9 @@
 
 namespace PressWind\Inc;
 
+require_once(dirname(__FILE__) . '/../old-blocks//block-page/index.php');
+require_once(dirname(__FILE__) . '/../old-blocks//block-addock/index.php');
+
 add_action(
   'init',
   function () {

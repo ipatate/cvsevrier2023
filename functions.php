@@ -14,6 +14,8 @@ require_once dirname(__FILE__) . '/inc/core/core.php';
 // inc, you can modify this files like you want
 require_once dirname(__FILE__) . '/inc/disable.php';
 require_once dirname(__FILE__) . '/inc/gutenberg.php';
+require_once dirname(__FILE__) . '/inc/rgpd.php';
+
 
 // pwa icons injected in head
 if (file_exists(dirname(__FILE__) . '/inc/pwa_head.php')) {

@@ -6,6 +6,11 @@
   @apply text-white bg-dark-blue;
 }
 
+.main-content {
+  margin-block-start: 0;
+}
+
+/*
 .main-content
   > .is-layout-constrained
   > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
@@ -13,11 +18,26 @@
   > .is-layout-constrained
   > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
   @apply px-6 lg:px-0;
+} */
+
+/** title **/
+
+h1.wp-block-post-title {
+  @apply relative after:absolute after:bottom-1 md:after:bottom-3 lg:after:bottom-5 after:left-0 after:content-[''] after:w-1/6 after:h-1 after:block after:bg-tertiary after:rounded;
 }
 
-.main-content-simple {
-  @apply pb-20;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
 }
+
+/* h2 {
+  @apply relative after:absolute after:bottom-1 md:after:bottom-3 lg:after:bottom-5 after:left-0 after:content-[''] after:w-1/4 after:h-2 after:block after:bg-light-blue after:rounded;
+} */
 
 /** flickity */
 

@@ -1,0 +1,32 @@
+/** no results **/
+.wp-block-query-no-results {
+  @apply flex flex-col items-center justify-center w-full h-full py-10 text-center;
+}
+
+.wp-block-query-no-results p {
+  @apply text-lg text-light-gray;
+}
+
+/** wp-block-query-pagination **/
+nav.wp-block-query-pagination {
+  @apply grid grid-cols-3 py-10;
+}
+.wp-block-query-pagination > .wp-block-query-pagination-numbers {
+  @apply flex justify-center flex-1 col-start-2;
+}
+
+.wp-block-query-pagination > .wp-block-query-pagination-numbers a {
+  @apply flex items-center justify-center w-5 h-5 p-0.5 no-underline bg-transparent rounded-full text-inherit hover:text-light-gray;
+}
+
+.wp-block-query-pagination > .wp-block-query-pagination-numbers .current {
+  @apply flex items-center justify-center w-5 h-5 px-0.5 pt-0.5 text-white rounded-full bg-dark-blue mx-0.5;
+}
+
+.wp-block-query-pagination .wp-block-query-pagination-previous {
+  @apply no-underline text-inherit flex items-center justify-start before:content-[''] before:bg-previous before:block before:w-8 before:h-8 before:bg-cover before:bg-no-repeat before:relative hover:text-light-gray before:mr-2;
+}
+
+.wp-block-query-pagination .wp-block-query-pagination-next {
+  @apply no-underline text-inherit flex items-center justify-end after:content-[''] after:bg-next after:block after:w-8 after:h-8 after:bg-cover after:bg-no-repeat after:relative hover:text-light-gray after:ml-2;
+}

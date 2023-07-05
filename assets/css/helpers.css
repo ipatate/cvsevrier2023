@@ -1,17 +1,4 @@
 @layer components {
-  .btn-effect {
-    @apply overflow-hidden relative transition-all ease-linear before:content-[''] before:block before:h-60 hover:before:w-full hover:before:h-full before:absolute  before:transform  before:translate-y-full before:rounded-full before:w-60
-    before:top-1/2 before:left-1/2 before:-translate-x-1/2 hover:before:left-0 hover:before:top-0 before:transition-all before:ease-linear before:duration-300 hover:before:translate-y-0 before:hover:translate-x-0 hover:before:rotate-0 before:-rotate-45 z-10 before:z-[-1];
-  }
-
-  .mask-img {
-    @apply relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:block after:bg-bg-mask after:bg-no-repeat after:bg-left-bottom after:bg-contain after:w-2/3 after:top-0;
-  }
-
-  .mask-img-reverse {
-    @apply after:bg-right-bottom after:right-0 after:left-auto after:-scale-x-100;
-  }
-
   .content-shadow {
     box-shadow: 0px 0px 44px -7px rgba(126, 126, 126, 0.08);
   }

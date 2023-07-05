@@ -1,0 +1,93 @@
+@import '../../../../assets/css/theme/blocks/page.scss';
+
+.btn-icon-after {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+
+    &::after {
+        display: flex;
+        content: '';
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        transform: translateX(-5px);
+        transition: all .3s;
+    }
+}
+
+.btn-arrow {
+    &::after {
+        background: url('../../../../assets/media/arrow-btn-blue.svg') no-repeat center;
+    }
+
+    &:hover::after {
+        background: url('../../../../assets/media/arrow-btn-white.svg') no-repeat center;
+        transform: translateX(2px);
+    }
+}
+
+
+.wp-block-gm-block-page {
+    font-family: $fontFamily!important;
+    margin: 70px auto;
+    max-width: 1150px;
+}
+
+
+.gm-block-page-content {
+    position: relative;
+    padding: 20px 50px;
+
+    .editor-url-input__button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.gm-block-page-title {
+    font-size: 50px;
+    margin: 20px 0 30px;
+}
+
+.gm-block-page-image {
+    position: relative;
+
+    .components-button {
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.gm-block-page-image-empty {
+    display: flex;
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+
+    .components-button {
+        width: 50px;
+        height: 50px;
+        background: none;
+
+        svg {
+            width: 50px;
+        height: 50px;
+        }
+    }
+}
+
+
+.gm-block-page-btn {
+    a {
+    margin: 20px 10px;
+    padding: 10px 5px 10px 20px;
+    }
+}
