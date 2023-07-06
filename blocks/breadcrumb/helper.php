@@ -23,7 +23,7 @@ function get_navigation_by_title($nav_title)
     $menu_items[] = $parent;
     if (count($value['innerBlocks'])) {
       foreach ($value['innerBlocks'] as $key => $inner) {
-        $menu_items[] = ['label' => $inner['attrs']['label'], 'url' => $inner['attrs']['url'], 'type' => $inner['attrs']['type'], 'id' => $inner['attrs']['id'], 'isTopLevelLink' => $inner['attrs']['isTopLevelLink'], 'parent' => $parent];
+        $menu_items[] = ['label' => $inner['attrs']['label'], 'url' => $inner['attrs']['url'], 'type' => $inner['attrs']['type'], 'id' => $inner['attrs']['id'], 'isTopLevelLink' => $inner['attrs']['isTopLevelLink'] ?? false, 'parent' => $parent];
       }
     }
   }

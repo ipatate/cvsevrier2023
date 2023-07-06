@@ -16,7 +16,7 @@ margin-bottom:var(--wp--preset--spacing--40)">
   <div class="wp-block-group">
     <!-- wp:paragraph -->
     <p>
-      <?php echo esc_html_x('Posted the', 'Verb to explain the publication status of a post', 'barthelemy'); ?>
+      <?php echo esc_html_x('Posted the', 'Verb to explain the publication status of a post', 'cvsevrier'); ?>
     </p>
     <!-- /wp:paragraph -->
 

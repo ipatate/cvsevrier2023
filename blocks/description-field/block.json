@@ -1,0 +1,17 @@
+{
+  "blockVersion": 2,
+  "name": "cvsevrier/description-field",
+  "version": "0.1.0",
+  "title": "Description team field",
+  "category": "cvsevrier",
+  "icon": "superhero",
+  "description": "Description field team for CVSevrier theme",
+  "supports": {
+    "html": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./index.php"
+  },
+  "textdomain": "cvsevrier"
+}

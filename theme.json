@@ -75,6 +75,11 @@
           "color": "#fff1e1",
           "name": "Quaternary",
           "slug": "quaternary"
+        },
+        {
+          "color": "#F2F2F2",
+          "name": "Quinary",
+          "slug": "quinary"
         }
       ]
     },

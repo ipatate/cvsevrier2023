@@ -19,6 +19,8 @@
 @import './components/breadcrumb.css';
 @import './components/hero.css';
 @import './components/post-list.css';
+@import './components/team-list.css';
+@import './components/carousel-actu.css';
 
 /** Flickity */
 @import 'flickity/dist/flickity.min.css';

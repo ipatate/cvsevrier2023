@@ -14,12 +14,12 @@ function gm_team_custom_post_type()
       'show_in_rest' => true,
       'supports' => array(
         'title',
-        'page-attributes'
-        // 'thumbnail',
+        'page-attributes',
+        'thumbnail',
         // 'editor'
       ),
       'public'      => true,
-      'has_archive' => true,
+      'has_archive' => false,
       'publicly_queryable'  => false,
       'menu_position' => 20,
       'menu_icon' => 'dashicons-admin-users',
@@ -29,9 +29,9 @@ function gm_team_custom_post_type()
   );
 
   register_taxonomy('teams_categories', 'teams', [
-    'public' => false,
+    'public' => true,
     'show_ui' => true,
-    'hierarchical' => true, 'show_tagcloud' => false, 'show_admin_column' => true,             'show_in_rest' => false,
+    'hierarchical' => true, 'show_tagcloud' => false, 'show_admin_column' => true,             'show_in_rest' => true,
   ]);
 }
 add_action('init', __NAMESPACE__ . '\gm_team_custom_post_type');

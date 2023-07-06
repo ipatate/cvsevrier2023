@@ -31,6 +31,7 @@
     "cross-env": "^7.0.3",
     "exec-php": "^0.0.6",
     "favicons": "^7.1.3",
+    "lightningcss-cli": "^1.21.5",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",

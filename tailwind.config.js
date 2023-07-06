@@ -6,7 +6,8 @@ module.exports = {
     preflight: process.env.IS_EDITOR ? false : usePreflightFront,
   },
   content: [
-    // './**/*.{php,twig,html,json}',
+    // './**/*.{php,html}',
+    './blocks/**/*.php',
     './assets/*.{js,jsx,ts,tsx,vue}',
     // './ecommerce/app/src/**/*.{js,jsx,ts,tsx,vue}',
   ],

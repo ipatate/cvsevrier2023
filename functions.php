@@ -15,7 +15,7 @@ require_once dirname(__FILE__) . '/inc/core/core.php';
 require_once dirname(__FILE__) . '/inc/disable.php';
 require_once dirname(__FILE__) . '/inc/gutenberg.php';
 require_once dirname(__FILE__) . '/inc/rgpd.php';
-
+require_once dirname(__FILE__) . '/inc/blocks-variations.php';
 
 // pwa icons injected in head
 if (file_exists(dirname(__FILE__) . '/inc/pwa_head.php')) {
@@ -31,9 +31,9 @@ require_once dirname(__FILE__) . '/inc/acf-config.php';
 if (file_exists(dirname(__FILE__) . '/post-type/team.php')) {
   include dirname(__FILE__) . '/post-type/team.php';
 }
-if (file_exists(dirname(__FILE__) . '/post-type/event.php')) {
-  include dirname(__FILE__) . '/post-type/event.php';
-}
+// if (file_exists(dirname(__FILE__) . '/post-type/event.php')) {
+//   include dirname(__FILE__) . '/post-type/event.php';
+// }
 
 
 // blocks
@@ -103,3 +103,13 @@ add_filter('excerpt_length', function () {
 add_filter('excerpt_more', function () {
   return '...';
 }, 999);
+
+
+
+// create shortcode team role
+function team_role_shortcode($atts)
+{
+  echo 'lol';
+}
+
+add_shortcode('team_role', __NAMESPACE__ . '\team_role_shortcode');

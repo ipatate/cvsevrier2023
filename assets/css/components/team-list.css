@@ -1,0 +1,27 @@
+.cvs-team-list ul {
+  @apply grid md:grid-cols-3 gap-14;
+}
+
+.cvs-team-list ul li {
+  @apply flex flex-col items-center justify-start;
+}
+
+/** image */
+
+.cvs-team-list ul li figure {
+  @apply relative flex items-center justify-center w-56 h-56 overflow-hidden rounded-full;
+}
+
+.cvs-team-list ul li figure img {
+  @apply object-cover object-center w-full h-full;
+}
+
+/** Content */
+
+.cvs-team-list ul li .wp-block-group > h2 {
+  @apply mt-4;
+}
+
+.cvs-team-list ul li .wp-block-group:last-child {
+  @apply text-center;
+}

@@ -282,7 +282,7 @@ body:not(.is-scrolled)
   .main-navigation
   .wp-block-navigation__container
   a {
-  @apply lg:text-white lg:hover:text-dark-blue;
+  @apply lg:text-white lg:hover:text-dark-blue drop-shadow-2xl;
 }
 
 body:not(.is-scrolled)
@@ -302,7 +302,6 @@ body:not(.is-scrolled)
   .wp-block-navigation:not(.has-background)
   .wp-block-navigation__submenu-container {
   @apply lg:bg-dark-blue/90 bg-light-gray;
-  backdrop-filter: blur(15px);
 }
 
 body:not(.is-scrolled)
@@ -315,6 +314,6 @@ body:not(.is-scrolled)
 }
 
 /** social links */
-body:not(.is-scrolled) .site-header.has-hero .bart-social-links .social-link a {
+body:not(.is-scrolled) .site-header.has-hero .cvs-social-links .social-link a {
   @apply lg:text-white lg:hover:text-dark-blue;
 }

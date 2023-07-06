@@ -7,14 +7,6 @@
     @apply overflow-hidden rounded-2xl;
   }
 
-  .cvs-img {
-    @apply overflow-hidden rounded-2xl mask-img;
-  }
-
-  .cvs-img-reverse {
-    @apply overflow-hidden rounded-2xl mask-img-reverse;
-  }
-
   .cvs-link {
     @apply font-semibold no-underline after:content-[''] after:ml-0.5 after:w-5 after:h-6 after:block flex after:bg-next-link after:bg-no-repeat items-center after:bg-center after:transition-transform hover:after:translate-x-1;
   }

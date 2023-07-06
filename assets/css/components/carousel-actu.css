@@ -1,0 +1,87 @@
+/** carousel actu and list post */
+
+.cvs-carousel-actu {
+  @apply py-10 md:px-10;
+}
+
+.cvs-carousel-actu .wp-block-post {
+  @apply w-full md:w-[calc(50%_-_1.5rem)] lg:w-[calc(33%_-_1.8rem)] mx-6 flex flex-col rounded-2xl min-h-full;
+}
+
+/** img */
+.cvs-post-list-item .wp-block-post > .wp-block-group:first-child,
+.cvs-carousel-actu .wp-block-post > .wp-block-group:first-child {
+  @apply relative z-10 object-cover w-full h-64 ml-auto overflow-hidden rounded-t-2xl;
+}
+
+.cvs-post-list-item .wp-block-post > .wp-block-group:first-child figure,
+.cvs-carousel-actu .wp-block-post > .wp-block-group:first-child figure {
+  @apply object-cover w-full h-full;
+}
+
+.cvs-post-list-item .wp-block-post > .wp-block-group:first-child figure a,
+.cvs-carousel-actu .wp-block-post > .wp-block-group:first-child figure a {
+  @apply w-full h-full;
+}
+
+.cvs-post-list-item .wp-block-post > .wp-block-group:first-child figure a img,
+.cvs-carousel-actu .wp-block-post > .wp-block-group:first-child figure a img {
+  @apply object-cover w-full h-full max-w-none;
+}
+
+/** content */
+.cvs-post-list-item .wp-block-post > .wp-block-group:last-child,
+.cvs-carousel-actu .wp-block-post > .wp-block-group:last-child {
+  @apply flex flex-col items-start justify-start flex-1 w-full px-8 rounded-b-2xl;
+}
+
+.cvs-post-list-item .wp-block-post .wp-block-post-title,
+.cvs-carousel-actu .wp-block-post .wp-block-post-title {
+  @apply p-0 leading-7;
+}
+
+.cvs-post-list-item .wp-block-post .wp-block-post-title,
+.cvs-carousel-actu .wp-block-post .wp-block-post-title a {
+  @apply no-underline;
+}
+
+.cvs-post-list-item .wp-block-post .wp-block-post-title,
+.cvs-carousel-actu .wp-block-post .wp-block-post-excerpt {
+  @apply flex flex-col justify-between flex-1;
+}
+
+.cvs-post-list-item .wp-block-post .wp-block-post-title,
+.cvs-carousel-actu .wp-block-post .wp-block-post-excerpt__more-text {
+  @apply mt-0;
+}
+.cvs-post-list-item .wp-block-post .wp-block-post-title,
+.cvs-carousel-actu .wp-block-post .wp-block-post-excerpt__more-text a {
+  @apply self-end cvs-link;
+}
+
+/** editor */
+.block-editor-block-list__block .wp-block-query,
+/** classic (outside loop) */
+.block-editor-block-list__block.cvs-carousel-classic {
+  @apply w-full py-0 overflow-x-scroll;
+}
+
+.block-editor-block-list__block
+  .wp-block-query
+  .cvs-carousel-grouped
+  .flickity-slider
+  .wp-block-post {
+  @apply relative;
+}
+
+.block-editor-block-list__block .wp-block-query .cvs-carousel-grouped,
+.block-editor-block-list__block.cvs-carousel-classic .cvs-carousel-grouped {
+  @apply flex items-stretch m-0 max-w-none w-max;
+}
+
+.block-editor-block-list__block.cvs-carousel-classic
+  .cvs-carousel-grouped
+  > .wp-block-group,
+.block-editor-block-list__block .wp-block-query .cvs-carousel-grouped li {
+  @apply w-80;
+}

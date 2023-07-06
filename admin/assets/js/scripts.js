@@ -1,4 +1,4 @@
-import './exemple-visibility'
+import './team-list'
 
 wp.domReady(() => {
   // exemple for add styles to block image
