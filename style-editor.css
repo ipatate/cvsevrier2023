@@ -1509,11 +1509,21 @@ body:not(.is-scrolled)
   display: block;
   height: 100%;
   width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  opacity: 0.5;
+  background-color: transparent;
   --tw-content: '';
   content: var(--tw-content);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.has-global-padding.cvs-hero-page {
+  padding: 0px;
+}
+
+.has-global-padding.cvs-hero-page figure.alignfull {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
 }
 
 .cvs-hero-page figure {
