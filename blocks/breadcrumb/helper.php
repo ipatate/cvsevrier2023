@@ -47,3 +47,15 @@ function has_parent($menu_items)
     }
   }
 }
+
+function get_page_by_id($menu_items, $id)
+{
+  if (!$menu_items) {
+    return;
+  }
+  foreach ($menu_items as $menu_item) {
+    if ((int) $menu_item['id'] === (int) $id) {
+      return $menu_item;
+    }
+  }
+}

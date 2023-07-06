@@ -28,9 +28,9 @@ function the_breadcrumb($nav_title)
     //   $breadcrumb .= ' &raquo; ' . $term->name;
     // }
 
-    if (is_category() || is_single()) {
+    if (is_category()) {
       the_category('title_li=');
-    } elseif (is_archive() || is_single()) {
+    } elseif (is_archive()) {
       if (is_day()) {
         printf(__('%s', 'text_domain'), get_the_date());
       } elseif (is_month()) {
@@ -41,12 +41,17 @@ function the_breadcrumb($nav_title)
         _e('Blog Archives', 'text_domain');
       }
     }
-    if ($parent = has_parent($menu_items)) {
+    $parent = has_parent($menu_items);
+    if ($parent && !is_single()) {
       echo '<a href="' . $parent['url'] . '">' . $parent['label'] . '</a>' . $sep;
     }
 
     if (is_single()) {
-      echo $sep;
+      $blog_home = get_field('cvs_home_blog', 'option');
+      $parent = get_page_by_id($menu_items, $blog_home->ID);
+      if ($parent) {
+        echo '<a href="' . $parent['url'] . '">' . $parent['label'] . '</a>' . $sep;
+      }
       the_title();
     }
 
