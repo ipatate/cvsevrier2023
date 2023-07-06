@@ -34,7 +34,7 @@ function setup()
   add_theme_support('responsive-embeds');
 
   // add category for theme patterns
-  register_block_pattern_category('cvsevrier/cvsevrier-patterns', ['label' => __('cvsevrier Block', 'cvsevrier')]);
+  register_block_pattern_category('cvsevrier/cvsevrier-patterns', ['label' => __('CVSevrier', 'cvsevrier')]);
 
   // or remove the theme support for the core-block-patterns
   remove_theme_support('core-block-patterns');
