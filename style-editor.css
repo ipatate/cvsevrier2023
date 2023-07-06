@@ -1177,16 +1177,6 @@ body:not(.is-scrolled):not(.nav-is-open)
   color: rgb(30 81 93 / var(--tw-text-opacity));
 }
 
-body:not(.is-scrolled)
-  .site-header.has-hero
-  .site-navigation
-  .main-navigation
-  .wp-block-navigation__container
-  a {
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 @media (min-width: 1095px) {
 
   body:not(.is-scrolled)
@@ -1206,7 +1196,7 @@ body:not(.is-scrolled)
   .wp-block-navigation__container
   a:hover {
     --tw-text-opacity: 1;
-    color: rgb(30 81 93 / var(--tw-text-opacity));
+    color: rgb(255 241 225 / var(--tw-text-opacity));
   }
 }
 

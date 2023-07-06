@@ -297,7 +297,7 @@ body:not(.is-scrolled)
   .main-navigation
   .wp-block-navigation__container
   a {
-  @apply lg:text-white lg:hover:text-dark-blue drop-shadow-2xl;
+  @apply lg:text-white lg:hover:text-quaternary;
 }
 
 body:not(.is-scrolled)
