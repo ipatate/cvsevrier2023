@@ -1510,8 +1510,8 @@ body:not(.is-scrolled)
   height: 100%;
   width: 100%;
   --tw-bg-opacity: 1;
-  background-color: rgb(30 81 93 / var(--tw-bg-opacity));
-  opacity: 0.6;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  opacity: 0.5;
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -1853,6 +1853,45 @@ body:not(.is-scrolled)
   > .wp-block-group,
 .block-editor-block-list__block .wp-block-query .cvs-carousel-grouped li {
   width: 20rem;
+}
+
+.cvs-partner-list {
+  margin: 0px;
+  display: flex;
+  max-width: 100%;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0px;
+}
+
+@media (min-width: 1095px) {
+
+  .cvs-partner-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.cvs-partner-list li {
+  margin: 0px;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.cvs-partner-list li a img {
+  max-width: 100%;
+  object-fit: contain;
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.cvs-partner-list li a img:hover {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /** Flickity */

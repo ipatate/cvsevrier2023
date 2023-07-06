@@ -9,7 +9,7 @@ function register_acf_options_pages()
     acf_add_options_page([
       'page_title' => __('Theme Options', 'cvsevrier'),
       'capability' => 'edit_posts',
-      'position' => '90',
+      'position' => '70',
     ]);
   }
 }

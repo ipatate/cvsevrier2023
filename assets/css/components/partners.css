@@ -1,0 +1,11 @@
+.cvs-partner-list {
+  @apply flex flex-wrap items-center justify-center max-w-full gap-10 p-0 m-0 list-none lg:flex-nowrap;
+}
+
+.cvs-partner-list li {
+  @apply flex items-center justify-center w-auto m-0;
+}
+
+.cvs-partner-list li a img {
+  @apply object-contain max-w-full grayscale hover:grayscale-0;
+}

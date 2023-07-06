@@ -22,5 +22,7 @@ add_action(
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/role-field');
     // description field
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/description-field');
+    // partners
+    register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/partners');
   }
 );

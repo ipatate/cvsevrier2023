@@ -21,6 +21,7 @@
 @import './components/post-list.css';
 @import './components/team-list.css';
 @import './components/carousel-actu.css';
+@import './components/partners.css';
 
 /** Flickity */
 @import 'flickity/dist/flickity.min.css';

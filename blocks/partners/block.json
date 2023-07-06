@@ -1,0 +1,17 @@
+{
+  "blockVersion": 2,
+  "name": "cvsevrier/partners",
+  "version": "0.1.0",
+  "title": "Partners List",
+  "category": "cvsevrier",
+  "icon": "share",
+  "description": "Partners List for CVSevrier theme",
+  "supports": {
+    "html": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./index.php"
+  },
+  "textdomain": "cvsevrier"
+}

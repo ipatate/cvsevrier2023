@@ -1,6 +1,6 @@
 {
     "key": "group_5e4531cee1e11",
-    "title": "Partner",
+    "title": "Partners",
     "fields": [
         {
             "key": "field_5e4531e79e6ce",
@@ -16,11 +16,13 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "layout": "table",
+            "pagination": 0,
             "min": 0,
             "max": 0,
-            "layout": "table",
+            "collapsed": "",
             "button_label": "Ajouter un élément",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_5e4532099e6cf",
@@ -75,8 +77,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "medium",
+                    "return_format": "id",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -85,30 +86,10 @@
                     "max_height": 500,
                     "max_size": "0.3",
                     "mime_types": "jpg,jpeg,png",
+                    "preview_size": "medium",
                     "parent_repeater": "field_5e4531e79e6ce"
                 }
-            ],
-            "rows_per_page": 20
-        },
-        {
-            "key": "field_5e4559ade9c2b",
-            "label": "Title list partner",
-            "name": "title_list_partner",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Les partenaires du club",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            ]
         }
     ],
     "location": [
@@ -129,5 +110,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688476889
+    "modified": 1688654181
 }
