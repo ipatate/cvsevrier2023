@@ -24,5 +24,9 @@ add_action(
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/description-field');
     // partners
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/partners');
+    // top-bar
+    register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/top-bar');
+    // address
+    register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/address');
   }
 );

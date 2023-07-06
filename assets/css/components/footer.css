@@ -26,6 +26,15 @@
   @apply fill-white;
 }
 
+/** address */
+.footer-site-wrapper .footer-logo-wrapper p {
+  @apply p-0 text-quaternary;
+}
+
+.footer-site-wrapper .footer-logo-wrapper a {
+  @apply text-quaternary hover:underline hover:text-quaternary;
+}
+
 /** social links */
 .footer-site-wrapper .cvs-social-links {
   @apply relative z-10 justify-start;

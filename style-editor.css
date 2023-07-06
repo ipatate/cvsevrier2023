@@ -98,8 +98,50 @@
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.-top-0 {
+  top: -0px;
+}
+
+.-top-0\.5 {
+  top: -0.125rem;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .block {
   display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .font-semibold {
@@ -109,6 +151,11 @@
 .text-dark-gray {
   --tw-text-opacity: 1;
   color: rgb(74 74 73 / var(--tw-text-opacity));
+}
+
+.text-tertiary {
+  --tw-text-opacity: 1;
+  color: rgb(213 154 22 / var(--tw-text-opacity));
 }
 
 /** layout */
@@ -460,9 +507,10 @@ nav.wp-block-query-pagination {
   left: 0px;
   right: 0px;
   z-index: 10000;
-  height: 6rem;
+  height: 8rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 241 225 / var(--tw-bg-opacity));
+  padding-bottom: 0.5rem;
   transition-duration: 500ms;
 }
 
@@ -514,13 +562,57 @@ body.admin-bar .site-header {
 /** set padding top for body */
 
 body {
-  padding-top: 6rem;
+  padding-top: 9rem;
 }
 
 body.page-template-page-hero,
 body.single,
 body.home {
   padding-top: 0px;
+}
+
+/** Top Bar */
+
+.cvs-top-bar {
+  position: relative;
+  z-index: 20;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 2.25rem;
+  max-width: 1275px;
+  align-items: center;
+  justify-content: space-between;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: rgb(158 158 157 / 0.3);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.125rem;
+}
+
+.cvs-top-bar a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 81 93 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+
+body:not(.is-scrolled) .site-header.has-hero .cvs-top-bar a {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 81 93 / var(--tw-text-opacity));
+  text-decoration-line: none;
 }
 
 /** logo */
@@ -946,6 +1038,7 @@ body.home {
 
 .header-site-wrapper .navigation-btn {
   position: relative;
+  margin: 0px;
   margin-left: auto;
   display: flex;
   height: 5rem;
@@ -1273,6 +1366,25 @@ body:not(.is-scrolled)
 
 .footer-site-wrapper .site-logo-wrapper svg g:first-child path {
   fill: #ffffff;
+}
+
+/** address */
+
+.footer-site-wrapper .footer-logo-wrapper p {
+  padding: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(255 241 225 / var(--tw-text-opacity));
+}
+
+.footer-site-wrapper .footer-logo-wrapper a {
+  --tw-text-opacity: 1;
+  color: rgb(255 241 225 / var(--tw-text-opacity));
+}
+
+.footer-site-wrapper .footer-logo-wrapper a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 241 225 / var(--tw-text-opacity));
+  text-decoration-line: underline;
 }
 
 /** social links */
@@ -2190,3 +2302,10 @@ https://flickity.metafizzy.co
 .flickity-page-dot:focus{outline:0;box-shadow:0 0 0 5px #19f}
 
 .flickity-page-dot.is-selected{background:hsl(0 0% 20% / 100%)}
+
+@media (min-width: 1095px) {
+
+  .lg\:inline {
+    display: inline;
+  }
+}

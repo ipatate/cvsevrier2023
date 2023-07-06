@@ -1,0 +1,17 @@
+{
+  "blockVersion": 2,
+  "name": "cvsevrier/address",
+  "version": "0.1.0",
+  "title": "Address field",
+  "category": "cvsevrier",
+  "icon": "admin-site",
+  "description": "Address field team for CVSevrier theme",
+  "supports": {
+    "html": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./index.php"
+  },
+  "textdomain": "cvsevrier"
+}
