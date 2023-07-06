@@ -8,8 +8,8 @@
 
 ?>
 
-<!-- wp:group {"align":"full","className":"bart-hero-page","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull bart-hero-page"><!-- wp:post-featured-image {"align":"full"} /-->
+<!-- wp:group {"align":"full","className":"cvs-hero-page","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cvs-hero-page"><!-- wp:post-featured-image {"align":"full"} /-->
 
   <!-- wp:group {"layout":{"type":"constrained"}} -->
   <div class="wp-block-group"><!-- wp:post-title {"level":1,

@@ -1,0 +1,11 @@
+.cvs-breadcrumb {
+  @apply pt-8 pb-3 text-light-gray;
+}
+
+.cvs-breadcrumb a {
+  @apply no-underline capitalize text-dark-blue hover:text-light-blue;
+}
+
+.cvs-breadcrumb span {
+  @apply px-2 font-semibold text-tertiary;
+}

@@ -16,11 +16,11 @@ nav.wp-block-query-pagination {
 }
 
 .wp-block-query-pagination > .wp-block-query-pagination-numbers a {
-  @apply flex items-center justify-center w-5 h-5 p-0.5 no-underline bg-transparent rounded-full text-inherit hover:text-light-gray;
+  @apply flex items-center justify-center w-6 h-6 p-0.5 no-underline bg-transparent rounded-full text-inherit hover:text-light-gray;
 }
 
 .wp-block-query-pagination > .wp-block-query-pagination-numbers .current {
-  @apply flex items-center justify-center w-5 h-5 px-0.5 pt-0.5 text-white rounded-full bg-dark-blue mx-0.5;
+  @apply flex items-center justify-center w-6 h-6 px-0.5 pt-0.5 text-white rounded-full bg-dark-blue mx-0.5 font-semibold;
 }
 
 .wp-block-query-pagination .wp-block-query-pagination-previous {

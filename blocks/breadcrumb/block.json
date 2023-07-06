@@ -1,0 +1,17 @@
+{
+  "blockVersion": 2,
+  "name": "cvsevrier/breadcrumb",
+  "version": "0.1.0",
+  "title": "Breadcrumb",
+  "category": "cvsevrier",
+  "icon": "link",
+  "description": "Breadcrumb for CVSevrier theme",
+  "supports": {
+    "html": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./index.php"
+  },
+  "textdomain": "cvsevrier"
+}

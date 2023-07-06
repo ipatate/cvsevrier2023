@@ -9,12 +9,16 @@
 /** layout */
 @import './layout.css';
 @import './block-styles.css';
+@import './pattern.css';
 @import './components/header.css';
 @import './components/footer.css';
 
 /** components */
 /* @import './components/hero.css'; */
 @import './components/carousel.css';
+@import './components/breadcrumb.css';
+@import './components/hero.css';
+@import './components/post-list.css';
 
 /** Flickity */
 @import 'flickity/dist/flickity.min.css';

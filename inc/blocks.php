@@ -16,5 +16,7 @@ add_action(
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/burger-btn');
     // carousel home
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/carousel-hero');
+    // breadcrumb
+    register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/breadcrumb');
   }
 );
