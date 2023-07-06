@@ -7,7 +7,7 @@
  */
 ?>
 
-<!-- wp:query {"queryId":4,"query":{"perPage":"15","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"flex","columns":3},"className":"bart-actu-list"} -->
+<!-- wp:query {"queryId":4,"query":{"perPage":"15","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"flex","columns":3},"className":"cvs-actu-list"} -->
 <div class="wp-block-query cvs-actu-list">
   <!-- wp:post-template -->
   <!-- wp:post-featured-image {"isLink":true} /-->

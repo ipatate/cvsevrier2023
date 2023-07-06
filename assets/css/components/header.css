@@ -301,7 +301,7 @@ body:not(.is-scrolled)
   .site-navigation
   .wp-block-navigation:not(.has-background)
   .wp-block-navigation__submenu-container {
-  @apply lg:bg-dark-blue/90 bg-light-gray;
+  @apply bg-transparent lg:bg-dark-blue/90;
 }
 
 body:not(.is-scrolled)

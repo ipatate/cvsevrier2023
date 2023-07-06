@@ -1,0 +1,61 @@
+.cvs-content-text {
+  @apply pb-20;
+}
+
+.cvs-content-text > .wp-block-group:last-child {
+  @apply grid sm:grid-rows-1 sm:grid-cols-content-text grid-cols-content-text-sm grid-rows-content-text-sm;
+}
+
+/** image */
+.cvs-content-text > .wp-block-group:last-child > .wp-block-group:first-child {
+  @apply col-start-1 col-end-3 row-start-1 row-end-3 sm:row-end-2;
+}
+
+.cvs-content-text
+  > .wp-block-group:last-child
+  > .wp-block-group:first-child
+  figure {
+  @apply object-contain p-0 m-0 cvs-img-rounded;
+}
+
+.cvs-content-text
+  > .wp-block-group:last-child
+  > .wp-block-group:first-child
+  figure
+  img {
+  @apply object-contain p-0 m-0;
+}
+
+/** content */
+.cvs-content-text > .wp-block-group:last-child > .wp-block-group:last-child {
+  @apply flex items-center col-start-2 col-end-4 row-start-2 row-end-4 sm:row-start-1 sm:mt-[15%] relative z-[1];
+}
+
+.cvs-content-text
+  > .wp-block-group:last-child
+  > .wp-block-group
+  > .wp-block-group {
+  @apply block px-6 py-6 bg-white sm:px-12 sm:py-9 rounded-2xl content-shadow;
+}
+
+.cvs-content-text
+  > .wp-block-group:last-child
+  > .wp-block-group
+  > .wp-block-group
+  .wp-block-buttons {
+  @apply pt-6;
+}
+/** REVERSE */
+
+/** image */
+.cvs-content-text.cvs-content-text-reverse
+  > .wp-block-group:last-child
+  > .wp-block-group:first-child {
+  @apply col-start-2 col-end-5;
+}
+
+.cvs-content-text.cvs-content-text-reverse
+  > .wp-block-group:last-child
+  > .wp-block-group:last-child {
+  @apply col-start-1 col-end-3;
+}

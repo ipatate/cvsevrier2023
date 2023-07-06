@@ -21,6 +21,13 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      gridTemplateColumns: {
+        'content-text': '1fr minmax(100px, 10%) 1fr',
+        'content-text-sm': '20px 1fr 20px',
+      },
+      gridTemplateRows: {
+        'content-text-sm': 'auto 40px auto',
+      },
       backgroundImage: (theme) => ({
         'next-link': "url('/assets/media/next-link.svg')",
         search: 'url(/assets/media/search.svg)',

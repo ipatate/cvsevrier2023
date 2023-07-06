@@ -1,0 +1,35 @@
+.cvs-link-block-wrapper {
+  @apply grid gap-10 md:grid-cols-2 lg:grid-cols-4;
+}
+
+div.wp-block-group.cvs-link-block {
+  @apply flex flex-col items-start m-0 justify-stretch;
+}
+
+.cvs-link-block > figure {
+  @apply w-full cvs-img-rounded h-60;
+}
+
+.cvs-link-block > figure img {
+  @apply object-cover w-full h-full;
+}
+
+.cvs-link-block > .wp-block-group {
+  @apply flex flex-col items-start flex-1;
+}
+
+.cvs-link-block > .wp-block-group > .wp-block-heading {
+  @apply w-full pt-6 pb-0 text-2xl;
+}
+
+.cvs-link-block > .wp-block-group > p:first-child {
+  @apply w-full py-2;
+}
+
+.cvs-link-block > .wp-block-group > p:last-child {
+  @apply w-full py-2 mt-auto;
+}
+
+.cvs-link-block > .wp-block-group p:last-child a {
+  @apply cvs-link;
+}
