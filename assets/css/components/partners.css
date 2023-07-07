@@ -1,5 +1,5 @@
 .cvs-partner-list {
-  @apply flex flex-wrap items-center justify-center max-w-full gap-10 p-0 m-0 list-none lg:flex-nowrap;
+  @apply flex flex-wrap items-center justify-center max-w-full gap-10 px-0 pb-10 m-0 list-none lg:flex-nowrap;
 }
 
 .cvs-partner-list li {

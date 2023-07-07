@@ -24,6 +24,7 @@
 @import './components/partners.css';
 @import './components/link-block.css';
 @import './components/content-text.css';
+@import './components/cookies.css';
 
 /** Flickity */
 @import 'flickity/dist/flickity.min.css';

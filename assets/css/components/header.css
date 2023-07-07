@@ -1,5 +1,5 @@
 .site-header {
-  @apply fixed top-0 left-0 right-0 z-[10000] h-32 lg:transition-colors duration-500 bg-quaternary pb-2;
+  @apply fixed top-0 left-0 right-0 z-[10000] h-32 lg:transition-colors duration-500 bg-[floralwhite] pb-2;
 }
 
 @media screen and (min-width: 1090px) {
@@ -45,11 +45,11 @@ body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a {
 /** logo */
 
 .header-site-wrapper .site-logo-wrapper {
-  @apply relative z-20 flex items-center justify-center object-cover w-40 h-16 ml-2 md:w-48 md:h-20 lg:ml-0 lg:-top-1 lg:mr-4;
+  @apply relative z-20 flex items-center justify-center object-cover w-48 h-20 ml-2 md:w-48 md:h-20 lg:ml-0 lg:-top-1 lg:mr-4;
 }
 
 .header-site-wrapper-simple .site-logo-wrapper {
-  @apply relative z-20 flex items-center justify-center object-cover w-40 h-16 ml-2 md:w-48 md:h-24 lg:ml-0;
+  @apply relative z-20 flex items-center justify-center object-cover w-48 h-20 ml-2 md:w-48 md:h-24 lg:ml-0;
 }
 
 .header-site-wrapper .site-logo-wrapper svg,
@@ -254,11 +254,11 @@ body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a {
 
 body:not(.is-scrolled) .site-header.has-hero {
   @apply bg-quaternary/30;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 body.is-scrolled .site-header {
-  @apply shadow-sm;
+  /* @apply shadow-sm; */
 }
 
 /** has admin bar */
