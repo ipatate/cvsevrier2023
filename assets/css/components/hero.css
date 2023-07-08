@@ -1,5 +1,5 @@
 .cvs-hero-page {
-  @apply relative h-screen w-full min-h-[45rem] after:block after:bg-transparent  after:absolute after:content-[''] after:inset-0 after:w-full after:h-full after:z-0 max-h-[800px];
+  @apply relative h-screen w-full min-h-[45rem] after:block after:bg-black/40  after:absolute after:content-[''] after:inset-0 after:w-full after:h-full after:z-0 max-h-[800px];
 }
 
 .cvs-hero-page::after {

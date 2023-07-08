@@ -198,7 +198,7 @@ body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a {
   @apply text-left;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1090px) {
   .header-site-wrapper
     .site-navigation
     .main-navigation
@@ -331,4 +331,37 @@ body:not(.is-scrolled)
 /** social links */
 body:not(.is-scrolled) .site-header.has-hero .cvs-social-links .social-link a {
   @apply lg:text-white lg:hover:text-dark-blue;
+}
+
+/** first element */
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  > li:first-child {
+  @apply lg:flex-none lg:mx-14;
+}
+
+.header-site-wrapper
+  .site-navigation
+  .main-navigation
+  .wp-block-navigation__container
+  > li:first-child
+  a
+  span {
+  @apply lg:hidden;
+}
+
+@media (min-width: 1090px) {
+  .header-site-wrapper
+    .site-navigation
+    .main-navigation
+    .wp-block-navigation__container
+    > li:first-child
+    a {
+    @apply lg:w-8 lg:h-8;
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="m21.66 10.25l-9-8a1 1 0 0 0-1.32 0l-9 8a1 1 0 0 0-.27 1.11A1 1 0 0 0 3 12h1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9h1a1 1 0 0 0 .93-.64a1 1 0 0 0-.27-1.11ZM13 20h-2v-3a1 1 0 0 1 2 0Zm5 0h-3v-3a3 3 0 0 0-6 0v3H6v-8h12ZM5.63 10L12 4.34L18.37 10Z"/></svg>')
+      no-repeat center;
+    background-color: currentColor;
+  }
 }

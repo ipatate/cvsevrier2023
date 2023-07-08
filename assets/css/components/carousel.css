@@ -7,7 +7,7 @@
 }
 
 .gm-block-carousel_item {
-  @apply relative h-screen w-full min-h-[45rem] overflow-hidden after:block after:bg-black after:opacity-20 after:absolute after:content-[''] after:inset-0 after:w-full after:h-full after:z-0 max-h-[800px];
+  @apply relative h-screen w-full min-h-[45rem] overflow-hidden after:block after:bg-black after:opacity-40 after:absolute after:content-[''] after:inset-0 after:w-full after:h-full after:z-0 max-h-[800px];
 }
 
 .gm-block-carousel_item img {
@@ -15,21 +15,22 @@
 }
 
 .gm-block-carousel_item > .wp-block-group {
-  @apply absolute top-0 bottom-0 z-10 flex flex-col items-start justify-center h-full px-4 mx-auto max-w-content xl:w-7/12;
+  @apply absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full px-4 mx-auto text-center top-14 max-w-wide;
 }
 
 @media screen and (min-width: 1094px) {
   .gm-block-carousel_item > .wp-block-group {
-    left: calc((100vw - var(--wp--style--global--content-size)) / 2);
+    left: calc((100vw - var(--wp--style--global--wide-size)) / 2);
   }
 }
 
 .gm-block-carousel_item > .wp-block-group > .wp-block-heading {
-  @apply w-full p-0 text-5xl text-white lg:text-6xl;
+  @apply w-11/12 p-0 m-0 text-5xl text-white md:text-6xl lg:text-7xl xl:text-8xl;
 }
 
 .gm-block-carousel_item > .wp-block-group > p {
-  @apply w-full text-lg text-white;
+  @apply w-10/12 text-xl italic text-white lg:w-8/12;
+  text-wrap: balance;
 }
 
 .gm-block-carousel_item > .wp-block-group > .wp-block-button {

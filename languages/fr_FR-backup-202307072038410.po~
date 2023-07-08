@@ -1,0 +1,215 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CV Sevrier 2023\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-07 19:52+0000\n"
+"PO-Revision-Date: 2023-07-07 19:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: Français\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2.2\n"
+"X-Domain: cvsevrier"
+
+#: patterns/hidden-404.php:12
+msgid "404 Not found !"
+msgstr "404 Page non trouvée !"
+
+#: inc/cookies.php:30
+msgid "Activer"
+msgstr ""
+
+#: inc/cookies.php:41
+msgid "activer"
+msgstr ""
+
+#: inc/cookies.php:31
+msgid "Activer tous les services"
+msgstr ""
+
+#: inc/cookies.php:38
+msgid "Autres services"
+msgstr ""
+
+#: inc/cookies.php:32
+msgid "Bloquer tous les services"
+msgstr ""
+
+#: inc/cookies.php:28
+msgid "Centre de préférences"
+msgstr ""
+
+#: inc/cookies.php:71
+msgid ""
+"Ces traceurs collectent la performance, le volume et le comportement du "
+"trafic du site. L’analyse de ces données permet de mieux répondre aux "
+"attentes des utilisateurs."
+msgstr ""
+
+#: inc/cookies.php:56
+msgid ""
+"Ces traceurs permettent de partager les contenus de notre site sur des sites "
+"tiers (notamment Facebook) et d’afficher des contenus provenant de sites "
+"tiers (notamment YouTube) sur notre site."
+msgstr ""
+
+#. Name of the theme
+msgid "CV Sevrier 2023"
+msgstr ""
+
+#: inc/gutenberg.php:37
+msgid "CVSevrier"
+msgstr ""
+
+#: inc/gutenberg.php:69
+msgid "cvsevrier Theme"
+msgstr ""
+
+#: inc/cookies.php:42
+msgid "désactiver"
+msgstr ""
+
+#: inc/cookies.php:25
+msgid ""
+"En poursuivant votre navigation, vous acceptez l'utilisation de services "
+"tiers pouvant installer des cookies."
+msgstr ""
+
+#: inc/cookies.php:40
+msgid "est désactivé"
+msgstr ""
+
+#: inc/cookies.php:29
+msgid "Fermer la fenêtre"
+msgstr ""
+
+#. bloginfo('name');
+#: blocks/breadcrumb/index.php:22
+msgid "Home"
+msgstr "Accueil"
+
+#. Author URI of the theme
+msgid "https://wp-performance.com"
+msgstr ""
+
+#. URI of the theme
+msgid "https://wp-performance.com/press-wind/"
+msgstr ""
+
+#: inc/cookies.php:19
+msgid "Information sur l'utilisation de cookies sur le site."
+msgstr ""
+
+#: patterns/hidden-no-results.php:15
+msgctxt "label"
+msgid "Search"
+msgstr "Rechercher"
+
+#: inc/cookies.php:39
+msgid "Le service"
+msgstr ""
+
+#: patterns/hidden-no-results.php:11
+msgctxt "Message explaining that there are no results returned from a search"
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/cookies.php:69
+msgid "Mesure d’audience et de performance"
+msgstr ""
+
+#: blocks/breadcrumb/index.php:81
+msgid "Page not found"
+msgstr "Page non trouvée"
+
+#: inc/cookies.php:55
+msgid "Partage et affichage de contenus"
+msgstr ""
+
+#: inc/cookies.php:27
+msgid "Personnaliser les cookies"
+msgstr ""
+
+#: inc/cookies.php:21
+msgid ""
+"Personnalisez vos choix en fonction des différentes finalités. Nous "
+"conserverons vos choix pendant 6 mois, ensuite nous vous reposerons la "
+"question. Vous pourrez changer d’avis à tout moment, en utilisant le lien "
+"“Gestion des cookies” en bas de chaque page. Les traceurs “techniques” sont "
+"indispensables au fonctionnement du site et ne peuvent donc pas être "
+"désactivés."
+msgstr ""
+
+#: patterns/hidden-no-results.php:15
+msgctxt "placeholder for search field"
+msgid "Search..."
+msgstr ""
+
+#: inc/cookies.php:36
+msgid "Publicités"
+msgstr ""
+
+#: blocks/carousel-hero/index.php:31
+msgid "Read more"
+msgstr "Lire plus"
+
+#: patterns/hidden-no-results.php:15
+msgid "Search"
+msgstr "Rechercher"
+
+#: blocks/breadcrumb/index.php:76
+msgid "Search results for"
+msgstr "Résultats de recherche pour"
+
+#: inc/cookies.php:33
+msgid "Service activé"
+msgstr ""
+
+#: inc/cookies.php:34
+msgid "Service bloqué"
+msgstr ""
+
+#: inc/cookies.php:37
+msgid "Statistiques"
+msgstr ""
+
+#: patterns/hidden-404.php:16
+msgid "The page you are looking for does not exist"
+msgstr ""
+
+#. Description of the theme
+msgid "Theme base with Tailwind CSS and Vite JS"
+msgstr ""
+
+#: inc/acf-config.php:10
+msgid "Theme Options"
+msgstr ""
+
+#: inc/cookies.php:26
+msgid "Tout accepter"
+msgstr ""
+
+#: inc/cookies.php:35
+msgid "Valider les préférences"
+msgstr ""
+
+#: patterns/post-meta.php:19
+msgctxt "Verb to explain the publication status of a post"
+msgid "Posted the"
+msgstr "Publié le"
+
+#: inc/cookies.php:23
+msgid ""
+"Vous devez accepter ou refuser les cookies pour chaque catégorie, puis "
+"sauvegarder votre choix."
+msgstr ""
+
+#. Author of the theme
+msgid "WP Preformance"
+msgstr ""
