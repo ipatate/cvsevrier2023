@@ -192,6 +192,12 @@
   font-weight: 600;
 }
 
+.gm-iframe {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 100%;
+}
+
 /*
 .main-content
   > .is-layout-constrained
