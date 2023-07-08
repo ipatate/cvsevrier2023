@@ -83,7 +83,7 @@
         _gdpr.push([
           {
             type: 'booking',
-            name: 'Booking',
+            name: 'booking',
             description: "Service de réservation d'activités en ligne",
           },
           i,

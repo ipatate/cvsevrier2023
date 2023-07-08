@@ -25,11 +25,11 @@
 }
 
 .gm-block-carousel_item > .wp-block-group > .wp-block-heading {
-  @apply w-11/12 p-0 m-0 text-5xl text-white md:text-6xl lg:text-7xl xl:text-8xl;
+  @apply w-11/12 p-0 m-0 text-5xl text-white md:text-6xl lg:text-7xl xl:text-8xl text-transparent bg-gradient-to-br bg-clip-text from-[#2f7e92] to-[#fff1e1];
 }
 
 .gm-block-carousel_item > .wp-block-group > p {
-  @apply w-10/12 text-xl italic text-white lg:w-8/12;
+  @apply w-10/12 text-xl italic text-white lg:text-2xl lg:w-8/12;
   text-wrap: balance;
 }
 

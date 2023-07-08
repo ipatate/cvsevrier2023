@@ -1599,11 +1599,19 @@ body:not(.is-scrolled)
 .gm-block-carousel_item > .wp-block-group > .wp-block-heading {
   margin: 0px;
   width: 91.666667%;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #2f7e92 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(47 126 146 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #fff1e1 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
   padding: 0px;
   font-size: 3rem;
   line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -1643,6 +1651,8 @@ body:not(.is-scrolled)
 
   .gm-block-carousel_item > .wp-block-group > p {
     width: 66.666667%;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

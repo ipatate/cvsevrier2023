@@ -14,7 +14,7 @@ add_action(
     echo '<script type="text/javascript">
       var _gdpr = _gdpr || [];
       var contentdisplayCB = [];
-      var _gdpr_lang = "fr";
+      var _gdpr_lang = "fr_FR";
     window._gdpr_options = {
       keepCookies: [],
       types: ["booking", "stats", "video"],
@@ -27,7 +27,7 @@ add_action(
 
 
 add_action(
-  'wp_footer',
+  'wp_head',
   function () {
     echo '<script type="text/javascript">
       var _gdpr_messages = {
@@ -106,6 +106,5 @@ add_action(
             }
                   })
       </script>';
-  },
-  2
+  }
 );
