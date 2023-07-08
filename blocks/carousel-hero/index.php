@@ -7,12 +7,17 @@ $elements = get_field('carousel_elements', $post->ID);
     <div class="gm-block-carousel_list gm-carousel-grouped wp-block-group" data-total="<?php echo count($elements); ?>">
       <?php foreach ($elements as $key => $element) : ?>
         <?php $image = $element['image']; ?>
+        <?php $attr  = ['loading' => ($key > 0 ? 'lazy' : "eager")];
+        if ($key === 0) {
+          $attr['fetchpriority'] = 'high';
+        }
+        ?>
         <div class="gm-block-carousel_item">
           <?php echo wp_get_attachment_image(
             $image['ID'],
             'full',
             false,
-            ['loading' => ($key > 0 ? 'lazy' : "eager")]
+            $attr
           ); ?>
           <?php if ($element['title']) : ?>
             <div class="wp-block-group">
