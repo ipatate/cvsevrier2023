@@ -16,7 +16,7 @@ export const viteConfig = {
     ]),
     // legacy({
       // target is default
-      targets: ['last 1 version'],
+      // targets: ['last 1 version'],
       // additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
       // polyfills: [],
       // modernPolyfills: [],
