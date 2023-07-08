@@ -14,13 +14,13 @@ export const viteConfig = {
       __dirname + '/**/*.php',
       // __dirname + '/**/*.twig'
     ]),
-    // legacy({
+    legacy({
       // target is default
       // targets: ['last 1 version'],
       // additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
       // polyfills: [],
       // modernPolyfills: [],
-    // }),
+    }),
   ],
   base:
     process.env.APP_ENV === 'development'
