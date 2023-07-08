@@ -67,5 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (window.initGdprCookie) {
     window.initGdprCookie.default()
+
+    document.querySelector('.gm-gdpr-cookie')?.addEventListener('click', () => {
+      window._gdpr_showModal()
+    })
   }
 })
