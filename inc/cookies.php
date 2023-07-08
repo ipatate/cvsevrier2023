@@ -31,10 +31,10 @@ add_action(
   function () {
     echo '<script type="text/javascript">
       var _gdpr_messages = {
-        fr: {
+        fr_FR: {
         banner_title: "' . addslashes(__("Information sur l'utilisation de cookies sur le site.", "cvsevrier")) . '",
         modal_intro_txt:
-        "' . addslashes(__("Personnalisez vos choix en fonction des différentes finalités. Nous conserverons vos choix pendant 6 mois, ensuite nous vous reposerons la question. Vous pourrez changer d’avis à tout moment, en utilisant le lien “Gestion des cookies” en bas de chaque page. Les traceurs “techniques” sont indispensables au fonctionnement du site et ne peuvent donc pas être désactivés.", "cvsevrier")) . '",
+        "' . addslashes(__("Personnalisez vos choix en fonction des différentes finalités. Vous pourrez changer d’avis à tout moment, en utilisant le lien “Gestion des cookies” en bas de chaque page.", "cvsevrier")) . '",
         modal_info_txt:
         "' . addslashes(__("Vous devez accepter ou refuser les cookies pour chaque catégorie, puis sauvegarder votre choix.", "cvsevrier")) . '",
         alert_text:
@@ -95,6 +95,16 @@ add_action(
             },
           ],
         ]);
+        document.addEventListener(\'DOMContentLoaded\', () => {
+            window.initGdprCookie.default("' . get_locale() . '")
+            var link_gdpr = document.querySelector(\'.gm-gdpr-cookie a\')
+            if (link_gdpr) {
+              link_gdpr.addEventListener(\'click\', function (e) {
+                e.preventDefault()
+                window._gdpr_showModal()
+              })
+            }
+                  })
       </script>';
   },
   2

@@ -64,16 +64,4 @@ function main() {
 
 document.addEventListener('DOMContentLoaded', () => {
   main()
-
-  if (window.initGdprCookie) {
-    window.initGdprCookie.default()
-    console.log(document.querySelector('.gm-gdpr-cookie a'))
-    document
-      .querySelector('.gm-gdpr-cookie a')
-      ?.addEventListener('click', (e) => {
-        e.preventDefault()
-        console.log('click')
-        window._gdpr_showModal()
-      })
-  }
 })
