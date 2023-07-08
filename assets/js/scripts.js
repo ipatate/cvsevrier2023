@@ -68,8 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.initGdprCookie) {
     window.initGdprCookie.default()
 
-    document.querySelector('.gm-gdpr-cookie')?.addEventListener('click', () => {
-      window._gdpr_showModal()
-    })
+    document
+      .querySelector('.gm-gdpr-cookie a')
+      ?.addEventListener('click', (e) => {
+        e.preventDefault()
+        window._gdpr_showModal()
+      })
   }
 })
