@@ -114,16 +114,16 @@
   margin: 0px;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .-mt-0 {
   margin-top: -0px;
 }
 
 .-mt-0\.5 {
   margin-top: -0.125rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .block {
@@ -146,29 +146,14 @@
   align-items: center;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .font-semibold {
@@ -2284,7 +2269,7 @@ div.wp-block-group.cvs-link-block {
   > .wp-block-group:last-child
   > .wp-block-group
   > .wp-block-group {
-    box-shadow: 0px 0px 44px -7px rgba(126, 126, 126, 0.08);
+    box-shadow: 0px 0px 44px -7px rgba(126, 126, 126, 0.3);
     display: block;
     border-radius: 1rem;
     --tw-bg-opacity: 1;
@@ -2653,6 +2638,36 @@ div.wp-block-group.cvs-link-block {
 
 .gdpr-ratio {
   padding-top: 56.25%;
+}
+
+/** mask */
+
+.wp-block-gm-addock .gdpr_mask-content {
+  justify-content: flex-start;
+}
+
+.wp-block-gm-addock .gdpr_mask-content .gdpr_mask-desc {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.gdpr_btn {
+  transform: none;
+  text-decoration-line: none;
+}
+
+.gdpr_btn:hover {
+  text-decoration-line: none;
+}
+
+.gdpr_mask-content {
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.gdpr_mask-content .gdpr_mask-desc {
+  text-align: center;
 }
 
 /** Flickity */

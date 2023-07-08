@@ -35,6 +35,8 @@ if (file_exists(dirname(__FILE__) . '/post-type/team.php')) {
 //   include dirname(__FILE__) . '/post-type/event.php';
 // }
 
+// cookie iframe
+require_once dirname(__FILE__) . '/inc/rgpd-iframe.php';
 
 // blocks
 if (file_exists(dirname(__FILE__) . '/inc/blocks.php')) {

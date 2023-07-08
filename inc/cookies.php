@@ -14,6 +14,22 @@ add_action(
     echo '<script type="text/javascript">
       var _gdpr = _gdpr || [];
       var contentdisplayCB = [];
+      var _gdpr_lang = "fr";
+    window._gdpr_options = {
+      keepCookies: [],
+      types: ["booking", "stats", "video"],
+      optout: true,
+    };
+    </script>';
+  },
+  2
+);
+
+
+add_action(
+  'wp_footer',
+  function () {
+    echo '<script type="text/javascript">
       var _gdpr_messages = {
         fr: {
         banner_title: "' . addslashes(__("Information sur l'utilisation de cookies sur le site.", "cvsevrier")) . '",
@@ -33,7 +49,7 @@ add_action(
         service_activated: "' . addslashes(__("Service activé", "cvsevrier")) . '",
         service_blocked: "' . addslashes(__("Service bloqué", "cvsevrier")) . '",
         modal_valid: "' . addslashes(__("Valider les préférences", "cvsevrier")) . '",
-        ads: "' . addslashes(__("Publicités", "cvsevrier")) . '",
+        booking: "' . addslashes(__("Réservation", "cvsevrier")) . '",
         stats: "' . addslashes(__("Statistiques", "cvsevrier")) . '",
         others: "' . addslashes(__("Autres services", "cvsevrier")) . '",
         mask_text_start: "' . addslashes(__("Le service", "cvsevrier")) . '",
@@ -41,12 +57,6 @@ add_action(
         activate: "' . addslashes(__("activer", "cvsevrier")) . '",
         deactivate: "' . addslashes(__("désactiver", "cvsevrier")) . '",
       },
-    };
-    var _gdpr_lang = "fr";
-    window._gdpr_options = {
-      keepCookies: [],
-      types: ["ads", "stats", "video"],
-      optout: true,
     };
         _gdpr.push([
           {
@@ -89,52 +99,3 @@ add_action(
   },
   2
 );
-
-/** video mask iframe rgpd */
-// if (!function_exists('file_get_html')) {
-//   require_once(dirname(__FILE__) . '/../helpers/simplehtmldom/simple_html_dom.php');
-// }
-
-// function iframe_render($content, $name, $service, $label)
-// {
-//   $html = new \simple_html_dom();
-//   $html->load($content);
-//   // find container
-//   $container = $html->find('.embed-' . strtolower($name));
-//   if (count($container) < 1) {
-//     return $content;
-//   }
-//   $items = $html->find('iframe');
-//   if (count($items) === 0) {
-//     return $content;
-//   }
-//   // generate key random
-//   $randomkey = random_bytes(5);
-//   // create script
-//   $script = '<script type="text/javascript">'
-//     . 'var ' . strtolower($service) . 'CB = ' . strtolower($service) . 'CB || [];'
-//     . strtolower($service) . 'CB.push(function(helpers) {'
-//     . 'var id = "mask' . bin2hex($randomkey) . '";'
-//     // remove padding
-//     . 'helpers.createIframe(\'.\'+id+\' .fluid-width-video-wrapper\', {';
-//   foreach ($items[0]->attr as $key => $value) {
-//     $script .= $key . ': "' . $value . '",';
-//   }
-//   $script .= '});setTimeout(function(){var maskContent = document.querySelector(\'.\'+id+\' .gdpr_mask-content\');if(maskContent) maskContent.style.display = "none";}, 1000)';
-//   $script .= '});</script>';
-//   $script .= '<span class="fluid-width-video-wrapper" style="display: block;padding-top: 56.3158%;"></span>';
-//   $_class = $container[0]->getAttribute('class');
-//   $container[0]->setAttribute('class', $_class . ' gdpr-mask mask' . bin2hex($randomkey));
-//   $container[0]->setAttribute('data-gdpr', $service);
-//   $container[0]->setAttribute('id', bin2hex($randomkey));
-//   // add padding for ratio
-//   $container[0]->setAttribute('style', "display:block;");
-//   $container[0]->innertext = $script;
-//   return $html->save();
-// }
-
-// // search video
-// add_filter('the_content', function ($content) {
-//   // work with Vimeo
-//   return namespace\iframe_render($content, 'Youtube', 'contentdisplay', __("Partage et affichage de contenus", "cvsevrier"));
-// });

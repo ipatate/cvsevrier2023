@@ -228,3 +228,25 @@
 .gdpr-ratio {
   padding-top: 56.25%;
 }
+
+/** mask */
+
+.wp-block-gm-addock .gdpr_mask-content {
+  @apply justify-start;
+}
+
+.wp-block-gm-addock .gdpr_mask-content .gdpr_mask-desc {
+  @apply mt-24 text-center;
+}
+
+.gdpr_btn {
+  @apply no-underline transform-none hover:no-underline;
+}
+
+.gdpr_mask-content {
+  @apply bg-gray-200 rounded-2xl;
+}
+
+.gdpr_mask-content .gdpr_mask-desc {
+  @apply text-center;
+}

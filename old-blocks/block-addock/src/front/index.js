@@ -1,27 +1,27 @@
-import injectScript from "../helpers/injectScript";
-import config from "../../config";
+import injectScript from '../helpers/injectScript'
+import config from '../../config'
 
 if (_gdpr === undefined) {
   injectScript(
     config.apiUrl,
     () => window.EasyLoisirsModule.init(),
-    window.EasyLoisirsModule
-  );
+    window.EasyLoisirsModule,
+  )
 } else {
-  var addockCB = [];
-  addockCB.push(function(helpers) {
+  var addockCB = []
+  addockCB.push(function (helpers) {
     injectScript(
       config.apiUrl,
       () => window.EasyLoisirsModule.init(),
-      window.EasyLoisirsModule
-    );
-  });
+      window.EasyLoisirsModule,
+    )
+  })
   _gdpr.push([
     {
-      type: "booking",
-      name: "Addock",
-      description: "Service de réservation d'activités en ligne"
+      type: 'booking',
+      name: 'Addock',
+      description: "Service de réservation d'activités en ligne",
     },
-    addockCB
-  ]);
+    addockCB,
+  ])
 }

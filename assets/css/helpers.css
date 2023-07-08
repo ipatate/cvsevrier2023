@@ -1,6 +1,6 @@
 @layer components {
   .content-shadow {
-    box-shadow: 0px 0px 44px -7px rgba(126, 126, 126, 0.08);
+    box-shadow: 0px 0px 44px -7px rgba(126, 126, 126, 0.3);
   }
 
   .cvs-img-rounded {

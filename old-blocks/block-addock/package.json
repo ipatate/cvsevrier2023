@@ -5,9 +5,9 @@
   "devDependencies": {},
   "main": "src/index.js",
   "scripts": {
-    "start": "../../node_modules/.bin/webpack --watch",
-    "watch": "../../node_modules/.bin/webpack --watch",
-    "build": "NODE_ENV=production ../../node_modules/.bin/webpack"
+    "start": "../../../cvsevrier/node_modules/.bin/webpack --watch",
+    "watch": "../../../cvsevrier/node_modules/.bin/webpack --watch",
+    "build": "NODE_ENV=production ../../../cvsevrier/node_modules/.bin/webpack"
   },
   "babel": {
     "presets": [
