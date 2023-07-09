@@ -6,7 +6,7 @@ $phone = get_field('phone', 'option');
 ?>
 <div class="cvs-top-bar alignwide">
   <div class="flex">
-    <a href="<?php $localisation_link_topbar; ?>" title="<?php echo $localisation_text_topbar ?>">
+    <a href="<?php echo $localisation_link_topbar; ?>" title="<?php echo $localisation_text_topbar ?>">
       <?php echo $localisation_text_topbar ?>
     </a>
     <span class="relative px-1 md:px-2 py-0 m-0 -top-0.5 text-tertiary">|</span>

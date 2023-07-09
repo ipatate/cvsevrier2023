@@ -27,7 +27,11 @@ export const viteConfig = {
       ? `/wp-content/themes/${getThemeDir()}/`
       : `/wp-content/themes/${getThemeDir()}/dist/`,
   root: '',
+  // css: {
+  //   transformer: 'lightningcss'
+  // },
   build: {
+    cssMinify: 'lightningcss',
     // output dir for production build
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
