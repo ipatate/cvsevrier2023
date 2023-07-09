@@ -248,7 +248,7 @@ body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a {
 
 /** page with hero */
 .site-header.has-hero {
-  @apply bg-quaternary/80;
+  @apply bg-quaternary/90;
   backdrop-filter: blur(15px);
 }
 
