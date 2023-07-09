@@ -104,6 +104,17 @@ function gm_addock_frontend_scripts()
   // }
 }
 
+add_filter(
+  'script_loader_tag',
+  function ($tag, $handle) use ($PLUGIN_NAME) {
+    if ('gm-addock-front' !== $handle)
+      return $tag;
+    return str_replace(' src', ' async="async" src', $tag);
+  },
+  10,
+  2
+);
+
 // add script in front if block exist
 add_action('wp_enqueue_scripts', 'gm_addock_frontend_scripts');
 
