@@ -1,0 +1,17 @@
+{
+  "blockVersion": 2,
+  "name": "cvsevrier/links-credit",
+  "version": "0.1.0",
+  "title": "Links Credit",
+  "category": "cvsevrier",
+  "icon": "share",
+  "description": "Links credit for CVSevrier theme",
+  "supports": {
+    "html": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./index.php"
+  },
+  "textdomain": "cvsevrier"
+}

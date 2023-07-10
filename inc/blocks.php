@@ -28,5 +28,7 @@ add_action(
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/top-bar');
     // address
     register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/address');
+    // links-credit
+    register_block_type_from_metadata(dirname(__FILE__) . '/../blocks/links-credit');
   }
 );
