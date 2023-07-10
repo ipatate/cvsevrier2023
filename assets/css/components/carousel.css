@@ -25,7 +25,7 @@
 }
 
 .gm-block-carousel_item > .wp-block-group > .wp-block-heading {
-  @apply relative z-10 w-11/12 p-0 m-0 text-5xl text-secondary md:text-6xl lg:text-7xl xl:text-8xl;
+  @apply relative z-10 w-11/12 p-0 m-0 text-5xl text-secondary md:text-6xl lg:text-7xl xl:text-8xl text-transparent bg-gradient-to-r bg-clip-text from-[#fff1e8] to-[#f6ecd6] animate-text-gradient;
 }
 
 .gm-block-carousel_item > .wp-block-group > .wp-block-heading::before {

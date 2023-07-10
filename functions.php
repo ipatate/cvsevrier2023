@@ -107,11 +107,5 @@ add_filter('excerpt_more', function () {
 }, 999);
 
 
-
-// create shortcode team role
-function team_role_shortcode($atts)
-{
-  echo 'lol';
-}
-
-add_shortcode('team_role', __NAMESPACE__ . '\team_role_shortcode');
+add_filter('jetpack_sharing_counts', '__return_false', 99);
+add_filter('jetpack_implode_frontend_css', '__return_false', 99);

@@ -34,6 +34,21 @@ module.exports = {
         next: "url('/assets/media/next.svg')",
         previous: "url('/assets/media/previous.svg')",
       }),
+      animation: {
+        'text-gradient': 'text-gradient 2s ease infinite',
+      },
+      keyframes: {
+        'text-gradient': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+      },
     },
   },
   plugins: [
