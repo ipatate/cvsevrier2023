@@ -1,0 +1,29 @@
+/** item */
+
+.cvs-content-simple {
+  @apply grid md:grid-cols-2;
+}
+
+.cvs-content-simple > .wp-block-group:last-child {
+  @apply flex flex-col items-start justify-center w-full md:px-6 xl:w-8/12 lg:px-0;
+}
+
+/* .cvs-content-simple > .wp-block-group:first-child figure {
+  @apply cvs-img;
+} */
+
+/** reverse */
+
+.cvs-content-simple-reverse.cvs-content-simple > .wp-block-group:last-child {
+  @apply md:col-start-1 md:row-start-1;
+}
+
+.cvs-content-simple-reverse.cvs-content-simple > .wp-block-group:first-child {
+  @apply md:col-start-2;
+}
+
+.cvs-content-simple-reverse.cvs-content-simple
+  > .wp-block-group:first-child
+  figure {
+  /* @apply cvs-img-reverse; */
+}

@@ -25,6 +25,7 @@
 @import './components/link-block.css';
 @import './components/content-text.css';
 @import './components/cookies.css';
+@import './components/content-simple.css';
 
 /** Flickity */
 @import 'flickity/dist/flickity.min.css';

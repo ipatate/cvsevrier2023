@@ -31,7 +31,7 @@ export const viteConfig = {
   //   transformer: 'lightningcss'
   // },
   build: {
-    cssMinify: 'lightningcss',
+    // cssMinify: 'lightningcss',
     // output dir for production build
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
