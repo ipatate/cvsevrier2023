@@ -48,7 +48,7 @@ function main() {
     const apiUrl = '/wp-json/gm/v1/wind'
     const fetchData = async (apiUrl) => {
       if (!apiUrl) return
-      const response = await fetch(apiUrl, {})
+      const response = await fetch(apiUrl, { cache: "no-cache" })
       const data = await response.json()
       windInfos.innerHTML = `${data.wind.avg10} Noeuds`
       //  Air : <strong>{{ data.real.temperature.air }}</strong

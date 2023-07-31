@@ -1,9 +1,10 @@
-import Flickity from 'flickity'
+// import Flickity from 'flickity'
 
 function initCarousel(elements, options) {
   const _options = { grouped: false, autoPlay: false, ...options }
   const flick = []
   if (elements && elements.length > 0) {
+    const { default: Flickity } = await import('flickity')
     for (const element of elements) {
       const total = element.dataset.total
       if (total === undefined || +total > 1) {
