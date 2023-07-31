@@ -1,6 +1,6 @@
 // import Flickity from 'flickity'
 
-await function initCarousel(elements, options) {
+async function initCarousel(elements, options) {
   const _options = { grouped: false, autoPlay: false, ...options }
   const flick = []
   if (elements && elements.length > 0) {
