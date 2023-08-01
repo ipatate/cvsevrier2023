@@ -36,6 +36,8 @@ export const viteConfig = {
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
     manifest: true,
+    // #todo add to press-wind base theme
+    cssCodeSplit: false,
     // override by legacy plugin
     // target: 'es6',
     rollupOptions: {

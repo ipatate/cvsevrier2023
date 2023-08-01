@@ -277,6 +277,12 @@
 
 /** layout */
 
+/** scroll with fixed header **/
+
+html {
+  scroll-padding-top: 12rem;
+}
+
 .entry-content {
   min-height: 20vh;
 }

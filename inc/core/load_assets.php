@@ -112,10 +112,13 @@ function enqueue_styles($slug, $path, $is_admin)
         // search css key
         foreach ($ordered as $key => $value) {
           // only entry and css
-          if (property_exists($value, 'css') === false) {
-            continue;
+          // # todo add to press-wind base theme
+          if (property_exists($value, 'css') === false && strpos($value->src, '.css') === false) continue;
+          if (strpos($value->src, '.css') > 0) {
+            $css = [$value->file];
+          } else {
+            $css = $value->css;
           }
-          $css = $value->css;
           // $css is array
           foreach ($css as $file) {
             // get token file

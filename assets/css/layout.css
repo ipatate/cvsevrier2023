@@ -1,3 +1,9 @@
+/** scroll with fixed header **/
+html {
+  scroll-padding-top: 12rem;
+}
+
+
 .entry-content {
   @apply min-h-[20vh];
 }
