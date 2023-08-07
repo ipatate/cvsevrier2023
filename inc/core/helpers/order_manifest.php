@@ -15,6 +15,7 @@ function order_manifest($manifest)
   $orderedWithToken = [];
   // add token
   foreach ($ordered['ordered'] as $key => $value) {
+    if (!$value) return;
     $orderedWithToken[get_token_name($value->file)] = $value;
   }
 
