@@ -692,7 +692,7 @@ body.admin-bar .site-header {
 
 /** set padding top for body */
 
-body {
+body:not(.wp-admin) {
   padding-top: 9rem;
 }
 

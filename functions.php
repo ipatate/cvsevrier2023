@@ -43,6 +43,11 @@ if (file_exists(dirname(__FILE__) . '/inc/blocks.php')) {
   include dirname(__FILE__) . '/inc/blocks.php';
 }
 
+// clean html carousel
+if (file_exists(dirname(__FILE__) . '/inc/clean_html.php')) {
+  include dirname(__FILE__) . '/inc/clean_html.php';
+}
+
 
 /**
  * Theme setup.
