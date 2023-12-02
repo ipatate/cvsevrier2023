@@ -1,6 +1,6 @@
 <?php
 
-namespace PressWind\Inc;
+namespace CVSevrier\Inc;
 
 function register_acf_options_pages()
 {

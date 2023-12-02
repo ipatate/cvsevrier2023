@@ -1,9 +1,10 @@
 <?php
 
-namespace PressWind\PostType;
+namespace CVSevrier\PostType;
 
 function gm_team_custom_post_type()
 {
+
     register_post_type(
         'teams',
         [

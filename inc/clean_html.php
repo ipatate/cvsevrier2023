@@ -1,6 +1,6 @@
 <?php
 
-namespace PressWind\Inc;
+namespace CVSevrier\Inc;
 
 $_class = 'cvs-carousel-grouped';
 
@@ -12,8 +12,15 @@ function parse_html($string, $_class)
     $document = new \DOMDocument();
     // hide error syntax warning
     libxml_use_internal_errors(true);
+    $clean = htmlspecialchars_decode(iconv('UTF-8', 'ISO-8859-1',
+        htmlentities($string, ENT_COMPAT, 'UTF-8')), ENT_QUOTES);
 
-    $document->loadHTML(mb_convert_encoding($string, 'HTML-ENTITIES', 'UTF-8'));
+    if ($clean == '') {
+        return $string;
+    }
+
+    $document->loadHTML($clean);
+
     $xpath = new \DOMXpath($document);
 
     parseCarousel($xpath, $_class);

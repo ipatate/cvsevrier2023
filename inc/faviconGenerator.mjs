@@ -1,23 +1,14 @@
 import fs from 'fs'
-import { favicons } from 'favicons'
-import execPhp from 'exec-php'
-import { dirname } from 'path'
+import {favicons} from 'favicons'
 
 /**
- * Get config from php file !
+ * Get config from json file !
  * @returns object
  */
 const getconfig = () => {
-  return new Promise((resolve, reject) => {
-    execPhp('./inc/core/index.php', (err, php, out) => {
-      if (err) {
-        reject(err)
-      }
-      php.get_config((err, result, output, printed) => {
-        resolve(result)
-      })
-    })
-  })
+  return JSON.parse(
+    fs.readFileSync(`./config/global.json`, 'utf8'),
+  )
 }
 
 // find theme dir name
@@ -27,6 +18,7 @@ export function getThemDir() {
 }
 
 const config = await getconfig()
+
 // directory target for assets generated
 const iconDir = config.iconsDir || 'public'
 // logo source
@@ -78,7 +70,7 @@ const configuration = {
 
 try {
   // delete dist
-  fs.rmSync(target, { recursive: true, force: true })
+  fs.rmSync(target, {recursive: true, force: true})
   console.log(`${target} is deleted!`)
 
   // create dist directory

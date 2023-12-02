@@ -1,6 +1,6 @@
 <?php
 
-namespace PressWind\Blocks\Breadcrumb;
+namespace CVSevrier\Blocks\Breadcrumb;
 
 require_once dirname(__FILE__).'/helper.php';
 

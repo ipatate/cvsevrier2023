@@ -1,6 +1,6 @@
 <?php
 
-namespace PressWind\Blocks\Breadcrumb;
+namespace CVSevrier\Blocks\Breadcrumb;
 
 function get_navigation_by_title($nav_title)
 {

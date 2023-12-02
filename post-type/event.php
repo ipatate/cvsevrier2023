@@ -1,6 +1,6 @@
 <?php
 
-namespace PressWind\PostType;
+namespace CVSevrier\PostType;
 
 function gm_event_custom_post_type()
 {

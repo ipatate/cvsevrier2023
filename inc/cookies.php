@@ -1,6 +1,6 @@
 <?php
 
-namespace PressWind\Inc;
+namespace CVSevrier\Inc;
 
 if (! defined('GTM_ID')) {
     define('GTM_ID', 'GTM-XXXXXX');

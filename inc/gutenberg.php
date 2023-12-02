@@ -1,6 +1,6 @@
 <?php
 
-namespace PressWind\Inc;
+namespace CVSevrier\Inc;
 
 /**
  * Get all registered core block patterns names

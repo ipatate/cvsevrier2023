@@ -1,15 +1,10 @@
 <?php
 
-namespace PressWind;
-
-use function PressWind\Inc\Core\load_assets;
+namespace CVSevrier;
 
 if (! defined('WP_ENV')) {
     define('WP_ENV', 'development');
 }
-
-// include core files (don't touch this files !)
-require_once dirname(__FILE__).'/inc/core/core.php';
 
 // inc, you can modify this files like you want
 require_once dirname(__FILE__).'/inc/disable.php';
@@ -63,14 +58,18 @@ function setup()
 
 add_action('after_setup_theme', __NAMESPACE__.'\setup');
 
-/**
- * init assets front
- */
-load_assets('press-wind', dirname(__FILE__).'', '3000');
-/**
- * init assets admin
- */
-load_assets('press-wind-admin', dirname(__FILE__).'/admin', '4444', true);
+if (class_exists('PressWind\PWVite')) {
+    /**
+     * init assets front
+     */
+    \PressWind\PWVite::init(port: 3000, path: '');
+
+    /**
+     * init assets admin
+     */
+    \PressWind\PWVite::init(port: 4444, path: '/admin', position: 'editor');
+
+}
 
 /** others settings */
 
