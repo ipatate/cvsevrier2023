@@ -7,11 +7,11 @@ namespace PressWind\Inc\Core\Helpers;
  */
 function get_manifest($rootPath = 'dist/manifest.json')
 {
-  $strJsonFileContents = file_get_contents($rootPath);
+    $strJsonFileContents = file_get_contents($rootPath);
 
-  return json_decode(str_replace(
-    '\u0000',
-    '',
-    $strJsonFileContents
-  ));
+    return json_decode(str_replace(
+        '\u0000',
+        '',
+        $strJsonFileContents
+    ));
 }

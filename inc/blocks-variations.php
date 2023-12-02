@@ -2,28 +2,27 @@
 
 namespace PressWind\Inc;
 
-
 /**
  * query for team list block
  */
 add_filter(
-  'pre_render_block',
-  function ($prerender, $block) {
-    if (
-      array_key_exists('namespace', $block['attrs']) && 'cvsevrier/team-list'
-      === $block['attrs']['namespace']
-    ) {
-      add_filter(
-        'query_loop_block_query_vars',
-        function ($query) {
+    'pre_render_block',
+    function ($prerender, $block) {
+        if (
+            array_key_exists('namespace', $block['attrs']) && $block['attrs']['namespace']
+            === 'cvsevrier/team-list'
+        ) {
+            add_filter(
+                'query_loop_block_query_vars',
+                function ($query) {
 
-          $query['post_type'] = 'teams';
+                    $query['post_type'] = 'teams';
 
-          return $query;
+                    return $query;
+                }
+            );
         }
-      );
-    }
-  },
-  1,
-  2
+    },
+    1,
+    2
 );

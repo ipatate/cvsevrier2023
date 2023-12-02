@@ -2,7 +2,7 @@
 
 namespace PressWind\Inc\Core\Disable;
 
-require_once dirname(__FILE__) . '/../index.php';
+require_once dirname(__FILE__).'/../index.php';
 
 function init_disable_rest_user()
 {
@@ -25,7 +25,7 @@ function init_disable_rest_user()
             return $endpoints;
         }
 
-        add_filter('rest_endpoints', __NAMESPACE__ . '\disable_rest_endpoints');
+        add_filter('rest_endpoints', __NAMESPACE__.'\disable_rest_endpoints');
     }
 }
 
