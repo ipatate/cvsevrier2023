@@ -12,6 +12,9 @@ require_once dirname(__FILE__).'/inc/gutenberg.php';
 require_once dirname(__FILE__).'/inc/cookies.php';
 require_once dirname(__FILE__).'/inc/blocks-variations.php';
 
+// login
+require_once dirname(__FILE__) . '/inc/login_assets.php';
+
 // pwa icons injected in head
 if (file_exists(dirname(__FILE__).'/inc/pwa_head.php')) {
     include dirname(__FILE__).'/inc/pwa_head.php';
