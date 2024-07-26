@@ -9,3 +9,7 @@
 .cvs-social-links .social-link a {
   @apply flex items-center justify-center w-full h-full;
 }
+
+.wp-block-post-template.is-layout-flow > :first-child {
+  margin-block-start: 1rem;
+}
