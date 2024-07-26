@@ -72,3 +72,12 @@ function block_category($categories)
 }
 
 add_filter('block_categories_all', __NAMESPACE__.'\block_category', 10, 2);
+
+
+// Remove Unwanted Block Suggestions of Block Directory
+add_action('admin_enqueue_scripts', function () {
+	wp_add_inline_script(
+		'wp-block-editor',
+		"wp.domReady( () => wp.plugins.unregisterPlugin( 'block-directory' ) )");
+}
+);

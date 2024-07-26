@@ -46,6 +46,10 @@
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -96,14 +100,14 @@
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .relative {
   position: relative;
-}
-
-.-top-0 {
-  top: -0px;
 }
 
 .-top-0\.5 {
@@ -112,10 +116,6 @@
 
 .m-0 {
   margin: 0px;
-}
-
-.-mt-0 {
-  margin-top: -0px;
 }
 
 .-mt-0\.5 {
@@ -2979,7 +2979,7 @@ https://flickity.metafizzy.co
 
 .flickity-rtl .flickity-page-dots{direction:rtl}
 
-.flickity-page-dot{display:block;width:10px;height:10px;padding:0;margin:0 8px;background:hsl(0 0% 20% / 25%);border-radius:50%;cursor:pointer;-webkit-appearance:none;appearance:none;border:none;text-indent:-9999px;overflow:hidden}
+.flickity-page-dot{display:block;width:10px;height:10px;padding:0;margin:0 8px;background:hsl(0 0% 20% / 25%);border-radius:50%;cursor:pointer;appearance:none;border:none;text-indent:-9999px;overflow:hidden}
 
 .flickity-rtl .flickity-page-dot{text-indent:9999px}
 

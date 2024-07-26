@@ -42,24 +42,24 @@ function main() {
   )
   mainObserver.observe(scrollWatcher)
 
-  /** wind top bar */
-  const windInfos = document.getElementById('cvs-wind')
-  if (windInfos) {
-    const apiUrl = '/wp-json/gm/v1/wind'
-    const fetchData = async (apiUrl) => {
-      if (!apiUrl) return
-      const response = await fetch(apiUrl, { cache: "no-cache" })
-      const data = await response.json()
-      windInfos.innerHTML = `${data.wind.avg10} Noeuds`
-      //  Air : <strong>{{ data.real.temperature.air }}</strong
-      // >°C
-    }
-
-    fetchData(apiUrl)
-    setInterval(() => {
-      fetchData(apiUrl)
-    }, 100000)
-  }
+  // /** wind top bar */
+  // const windInfos = document.getElementById('cvs-wind')
+  // if (windInfos) {
+  //   const apiUrl = '/wp-json/gm/v1/wind'
+  //   const fetchData = async (apiUrl) => {
+  //     if (!apiUrl) return
+  //     const response = await fetch(apiUrl, { cache: "no-cache" })
+  //     const data = await response.json()
+  //     windInfos.innerHTML = `${data.wind.avg10} Noeuds`
+  //     //  Air : <strong>{{ data.real.temperature.air }}</strong
+  //     // >°C
+  //   }
+  //
+  //   fetchData(apiUrl)
+  //   setInterval(() => {
+  //     fetchData(apiUrl)
+  //   }, 100000)
+  // }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

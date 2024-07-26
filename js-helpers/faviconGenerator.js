@@ -1,5 +1,10 @@
 import fs from 'fs'
-import {favicons} from 'favicons'
+import { fileURLToPath } from 'url'
+import path from 'path'
+import { favicons } from 'favicons'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 /**
  * Get config from json file !
@@ -7,7 +12,7 @@ import {favicons} from 'favicons'
  */
 const getconfig = () => {
   return JSON.parse(
-    fs.readFileSync(`./config/global.json`, 'utf8'),
+    fs.readFileSync(`${__dirname}/../config/favicon.json`, 'utf8'),
   )
 }
 
@@ -26,7 +31,7 @@ const source = config.source
 // directory for build
 const target = `./${iconDir}/`
 // php file to include to head
-const phpHead = './inc/pwa_head.php'
+const phpHead = `${__dirname}/../inc/pwa_head.php`
 // tag filter to remove
 const removeList = [
   'mobile-web-app-capable',
@@ -70,7 +75,7 @@ const configuration = {
 
 try {
   // delete dist
-  fs.rmSync(target, {recursive: true, force: true})
+  fs.rmSync(target, { recursive: true, force: true })
   console.log(`${target} is deleted!`)
 
   // create dist directory
@@ -94,12 +99,12 @@ try {
   const head = response.html
 
   // remove element from removeList
-  removeList.forEach((l) => {
+  for (const l of removeList) {
     const index = head.findIndex((e) => e.includes(l))
     if (index) {
       head.splice(index, 1)
     }
-  })
+  }
 
   // create head for include in page
   fs.writeFileSync(

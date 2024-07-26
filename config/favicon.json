@@ -1,0 +1,25 @@
+{
+    "iconsDir": "public",
+    "source": "./assets/media/icon.svg",
+    "manifest": {
+        "appName": "Club de Voile de Sevrier",
+        "appShortName": "CVSevrier",
+        "appDescription": "Des histoires et des frissons !",
+        "background": "#fff",
+        "theme_color": "#1e515d",
+        "lang": "fr-FR",
+        "preferRelatedApplications": false,
+        "pixel_art": false,
+        "loadManifestWithCredentials": false,
+        "manifestMaskable": false,
+        "icons": {
+            "favicons": true,
+            "android": true,
+            "appleIcon": true,
+            "appleStartup": false,
+            "coast": false,
+            "yandex": false,
+            "windows": false
+        }
+    }
+}
