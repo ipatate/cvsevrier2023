@@ -12,6 +12,7 @@ require_once dirname(__FILE__).'/inc/assets.php';
 require_once dirname(__FILE__).'/inc/gutenberg.php';
 require_once dirname(__FILE__).'/inc/cookies.php';
 require_once dirname(__FILE__).'/inc/sortable.php';
+//require_once dirname(__FILE__).'/inc/meta.php';
 require_once dirname(__FILE__).'/inc/blocks-variations.php';
 
 // login

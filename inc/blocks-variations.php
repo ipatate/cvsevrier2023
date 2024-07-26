@@ -8,7 +8,7 @@ namespace CVSevrier\Inc;
 add_filter(
     'pre_render_block',
     function ($prerender, $block) {
-        if (
+        if ($block['attrs'] &&
             array_key_exists('namespace', $block['attrs']) && $block['attrs']['namespace']
             === 'cvsevrier/team-list'
         ) {

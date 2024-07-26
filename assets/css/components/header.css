@@ -29,12 +29,13 @@ body.home {
 
 /** Top Bar */
 .cvs-top-bar {
-  @apply relative z-20 flex items-center justify-between px-2 mx-auto border-t-0 border-b border-l-0 border-r-0 border-solid h-9 border-light-gray/30 max-w-wide pt-0.5;
+  @apply relative z-20 w-auto flex items-center justify-between px-2 xl:mx-auto border-t-0 border-b border-l-0 border-r-0 border-solid h-9 border-light-gray/30 xl:max-w-wide max-w-[100vw] pt-0.5;
 }
 
 .cvs-top-bar a {
   @apply text-sm no-underline text-dark-blue;
 }
+
 body:not(.is-scrolled) .site-header.has-hero .cvs-top-bar a {
   @apply text-white;
 }

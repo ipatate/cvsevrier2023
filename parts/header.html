@@ -1,7 +1,15 @@
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group">
-  <!-- wp:cvsevrier/top-bar {"name":"cvsevrier/top-bar","data":{},"mode":"preview"} /-->
-</div>
+<div class="wp-block-group"><!-- wp:group {"className":"cvs-top-bar","style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group cvs-top-bar" style="padding-right:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:create-block/cvs-meteotop /--></div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"fontSize":"small"} -->
+      <p class="has-small-font-size"><strong><a href="https://wp.ddev.site/contact" data-type="page" data-id="22">Contact</a></strong></p>
+      <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+  <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"header-site-wrapper"} -->
