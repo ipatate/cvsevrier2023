@@ -10,7 +10,6 @@ if (! defined('WP_ENV')) {
 require_once dirname(__FILE__).'/inc/setup.php';
 require_once dirname(__FILE__).'/inc/assets.php';
 require_once dirname(__FILE__).'/inc/gutenberg.php';
-require_once dirname(__FILE__).'/inc/cookies.php';
 require_once dirname(__FILE__).'/inc/sortable.php';
 //require_once dirname(__FILE__).'/inc/meta.php';
 require_once dirname(__FILE__).'/inc/blocks-variations.php';
@@ -32,9 +31,6 @@ if (file_exists(dirname(__FILE__).'/post-type/team.php')) {
     include dirname(__FILE__).'/post-type/team.php';
 }
 
-// cookie iframe
-require_once dirname(__FILE__).'/inc/rgpd-iframe.php';
-
 // blocks
 if (file_exists(dirname(__FILE__).'/inc/blocks.php')) {
     include dirname(__FILE__).'/inc/blocks.php';
@@ -55,3 +51,38 @@ if (file_exists(dirname(__FILE__).'/inc/clean_html.php')) {
 //    return '...';
 //}, 999);
 
+
+
+add_filter('gcc_list_iframes', function ($iframes) {
+	$iframes = array_merge([
+		'webcam' => [
+			'name' => 'Webcam',
+			'slug' => 'webcam',
+			'content' => [
+				'col1' => '',
+				'col2' => 'm.webcam-hd.com',
+				'col3' => __('Webcam', 'goodmotion-cookie-consent'),
+			],
+			'settings' => [
+				'embedUrl' => '{data-id}',
+				'useId' => false,
+				'thumbnailUrl' => '',
+				'iframe' => [
+					'allow' => [
+						'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
+						'frameBorder' => 0,
+					],
+				],
+				'languages' => [
+					'en' => [
+						'notice' => __('By clicking on "Load content", you accept the deposit of third-party cookies intended to offer you content.', 'goodmotion-cookie-consent'),
+						'loadBtn' => __('Load once', 'goodmotion-cookie-consent'),
+						'loadAllBtn' => __("Don't ask again", 'goodmotion-cookie-consent'),
+					],
+				],
+			],
+		],
+	], $iframes);
+
+	return $iframes;
+}, 1, 1);
