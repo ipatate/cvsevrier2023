@@ -84,20 +84,6 @@ const addVariation = function () {
                   fontSize: 'x-large',
                 },
               ],
-              [
-                'cvsevrier/role-field',
-                {
-                  name: 'cvsevrier/role-field',
-                  mode: 'preview',
-                },
-              ],
-              [
-                'cvsevrier/description-field',
-                {
-                  name: 'cvsevrier/description-field',
-                  mode: 'preview',
-                },
-              ],
             ],
           ],
         ],
