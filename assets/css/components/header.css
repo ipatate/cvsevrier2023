@@ -36,11 +36,15 @@ body.home {
   @apply text-sm no-underline text-dark-blue;
 }
 
-body:not(.is-scrolled) .site-header.has-hero .cvs-top-bar a {
+body:not(.is-scrolled) .site-header.has-hero .cvs-top-bar a,
+body:not(.is-scrolled) .site-header.has-hero .cvs-top-bar svg,
+body:not(.is-scrolled) .site-header.has-hero .cvs-top-bar a svg {
   @apply text-white;
 }
 
-body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a {
+body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a,
+body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar svg,
+body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a svg {
   @apply text-sm no-underline text-dark-blue;
 }
 /** logo */
