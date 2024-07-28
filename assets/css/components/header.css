@@ -49,7 +49,7 @@ body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a svg {
 }
 
 .cvs-top-links svg {
-  @apply hidden md:inline-block;
+  @apply hidden w-0 md:inline-block md:w-auto;
 }
 /** logo */
 
