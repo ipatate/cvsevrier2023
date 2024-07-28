@@ -47,6 +47,10 @@ body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar svg,
 body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a svg {
   @apply text-sm no-underline text-dark-blue;
 }
+
+.cvs-top-links svg {
+  @apply hidden md:block;
+}
 /** logo */
 
 .header-site-wrapper .site-logo-wrapper {
