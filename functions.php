@@ -73,11 +73,27 @@ add_filter('gcc_list_iframes', function ($iframes) {
 						'frameBorder' => 0,
 					],
 				],
-				'languages' => [
-					'en' => [
-						'notice' => __('By clicking on "Load content", you accept the deposit of third-party cookies intended to offer you content.', 'goodmotion-cookie-consent'),
-						'loadBtn' => __('Load once', 'goodmotion-cookie-consent'),
-						'loadAllBtn' => __("Don't ask again", 'goodmotion-cookie-consent'),
+			],
+		],
+		'meteo' => [
+			'name' => 'Météo',
+			'slug' => 'meteo',
+			'content' => [
+				'col1' => '',
+				'col2' => 'www.meteoblue.com',
+				'col3' => __('Météo Blue', 'goodmotion-cookie-consent'),
+			],
+			'settings' => [
+				'embedUrl' => '{data-id}',
+				'useId' => false,
+				'thumbnailUrl' => '',
+				'iframe' => [
+					"frameborder"=> "0",
+					"scrolling"=> "NO",
+					"allowtransparency"=>"true",
+					'allow' => [
+						'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
+						'frameBorder' => 0,
 					],
 				],
 			],
