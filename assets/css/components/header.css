@@ -149,7 +149,7 @@ body:not(.is-scrolled).nav-is-open .site-header .cvs-top-bar a svg {
   .main-navigation
   .wp-block-navigation__container
   li {
-  @apply items-start w-full lg:w-auto lg:items-center lg:flex-1 lg:text-center lg:leading-5;
+  @apply items-start w-full lg:w-auto lg:items-center lg:justify-center lg:flex-1 lg:text-center lg:leading-5;
 }
 
 .header-site-wrapper
@@ -349,7 +349,7 @@ body:not(.is-scrolled) .site-header.has-hero .cvs-social-links .social-link a {
   .main-navigation
   .wp-block-navigation__container
   > li:first-child {
-  @apply lg:flex-none lg:mx-14;
+  @apply lg:flex-none lg:mx-4;
 }
 
 .header-site-wrapper

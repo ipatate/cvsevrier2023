@@ -66,11 +66,18 @@ add_filter('gcc_list_iframes', function ($iframes) {
 			'settings' => [
 				'embedUrl' => '{data-id}',
 				'useId' => false,
-				'thumbnailUrl' => '',
+				'thumbnailUrl' => 'https://www.cvsevrier.fr/wp-content/uploads/2024/07/widget.png',
 				'iframe' => [
 					'allow' => [
 						'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
-						'frameBorder' => 0,
+					],
+					'frameBorder' => 0,
+				],
+				'languages' => [
+					'en' => [
+						'notice' => __('By clicking on "Load content", you accept the deposit of third-party cookies intended to offer you content.', 'goodmotion-cookie-consent'),
+						'loadBtn' => __('Load once', 'goodmotion-cookie-consent'),
+						'loadAllBtn' => __("Don't ask again", 'goodmotion-cookie-consent'),
 					],
 				],
 			],
@@ -86,14 +93,20 @@ add_filter('gcc_list_iframes', function ($iframes) {
 			'settings' => [
 				'embedUrl' => '{data-id}',
 				'useId' => false,
-				'thumbnailUrl' => '',
+				'thumbnailUrl' => 'https://www.cvsevrier.fr/wp-content/uploads/2024/07/widget.png',
 				'iframe' => [
-					"frameborder"=> "0",
-					"scrolling"=> "NO",
-					"allowtransparency"=>"true",
+					"scrolling" => "NO",
+					"allowtransparency" => "true",
 					'allow' => [
 						'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
-						'frameBorder' => 0,
+					],
+					'frameBorder' => 0,
+				],
+				'languages' => [
+					'en' => [
+						'notice' => __('By clicking on "Load content", you accept the deposit of third-party cookies intended to offer you content.', 'goodmotion-cookie-consent'),
+						'loadBtn' => __('Load once', 'goodmotion-cookie-consent'),
+						'loadAllBtn' => __("Don't ask again", 'goodmotion-cookie-consent'),
 					],
 				],
 			],
@@ -101,4 +114,4 @@ add_filter('gcc_list_iframes', function ($iframes) {
 	], $iframes);
 
 	return $iframes;
-}, 1, 1);
+}, 10, 1);
