@@ -3,7 +3,7 @@
 }
 
 .cvs-team-list ul li {
-  @apply flex flex-col items-center justify-start;
+  @apply flex flex-col items-center justify-start mt-0;
   margin-block-start: 0;
 }
 
