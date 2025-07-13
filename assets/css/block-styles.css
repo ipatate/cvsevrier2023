@@ -13,3 +13,7 @@
 .wp-block-post-template.is-layout-flow > :first-child {
   margin-block-start: 1rem;
 }
+
+.cvs-team-desc p {
+  @apply p-0;
+}
