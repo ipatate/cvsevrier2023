@@ -4,6 +4,7 @@
 
 .cvs-team-list ul li {
   @apply flex flex-col items-center justify-start;
+  margin-block-start: 0;
 }
 
 /** image */
@@ -24,4 +25,8 @@
 
 .cvs-team-list ul li .wp-block-group:last-child {
   @apply text-center;
+}
+
+.cvs-team-list ul li .cvs-team-desc p {
+  @apply p-0;
 }

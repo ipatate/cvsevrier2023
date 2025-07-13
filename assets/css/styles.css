@@ -29,7 +29,3 @@
 
 /** Flickity */
 @import 'flickity/dist/flickity.min.css';
-
-.cvs-team-desc > p {
-  @apply p-0;
-}
