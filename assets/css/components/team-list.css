@@ -28,5 +28,5 @@
 }
 
 .cvs-team-list ul li .cvs-team-desc p {
-  @apply p-0;
+  @apply p-0 m-0;
 }
