@@ -23,7 +23,7 @@ figure.wp-block-gallery.gallery-grid.has-nested-images .wp-block-image {
 
 figure.wp-block-gallery.gallery-grid .wp-block-image div img,
 figure.wp-block-gallery.gallery-grid .wp-block-image img {
-  @apply object-cover object-center w-full h-full;
+  @apply object-cover object-center w-full h-full min-w-full;
 }
 
 /** Grid ONE */
