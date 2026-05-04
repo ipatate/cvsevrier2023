@@ -26,6 +26,7 @@
 @import './components/content-text.css';
 /*@import './components/cookies.css';*/
 @import './components/content-simple.css';
+@import './components/gallery.css';
 
 /** Flickity */
 @import 'flickity/dist/flickity.min.css';

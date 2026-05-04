@@ -1,4 +1,5 @@
 import './team-list'
+import "./gallery";
 
 wp.domReady(() => {
   // exemple for add styles to block image

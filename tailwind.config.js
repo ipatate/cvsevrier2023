@@ -5,12 +5,7 @@ module.exports = {
   corePlugins: {
     preflight: process.env.IS_EDITOR ? false : usePreflightFront,
   },
-  content: [
-    // './**/*.{php,html}',
-    './blocks/**/*.php',
-    './assets/*.{js,jsx,ts,tsx,vue}',
-    // './ecommerce/app/src/**/*.{js,jsx,ts,tsx,vue}',
-  ],
+  content: ['./assets/*.{js,jsx,ts,tsx,vue}'],
   safelist: [],
   theme: {
     screens: {
