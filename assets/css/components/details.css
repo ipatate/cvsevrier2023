@@ -1,0 +1,39 @@
+.wp-block-details {
+  @apply p-4 bg-white rounded-lg;
+}
+
+.wp-block-details summary {
+  @apply flex justify-between items-center gap-8 font-semibold text-large;
+}
+
+.wp-block-details summary :first-child {
+  @apply flex-1 font-semibold text-large;
+}
+
+.wp-block-details summary::marker,
+.wp-block-details summary::-webkit-details-marker {
+  content: none;
+  display: none;
+}
+
+.wp-block-details summary::before {
+  content: '';
+  display: none;
+}
+
+.wp-block-details summary::after {
+  content: '';
+}
+
+.wp-block-details summary::after {
+  @apply block w-10 h-10 flex-shrink-0 flex-grow-0 p-0 bg-dark-blue;
+  mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM2YjI1NzciIGQ9Ik0xMS41IDE5VjYuOTIxbC01Ljc5MiA1Ljc5Mkw1IDEybDctN2w3IDdsLS43MDguNzEzTDEyLjUgNi45MjFWMTl6Ii8+PC9zdmc+');
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.wp-block-details[open] summary::after {
+  transform: rotate(180deg);
+}
