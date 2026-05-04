@@ -3,11 +3,11 @@
 }
 
 .wp-block-details summary {
-  @apply flex justify-between items-center gap-8 font-semibold text-large;
+  @apply flex justify-between items-center gap-8 font-semibold text-lg;
 }
 
 .wp-block-details summary :first-child {
-  @apply flex-1 font-semibold text-large;
+  @apply flex-1 font-semibold text-lg;
 }
 
 .wp-block-details summary::marker,
