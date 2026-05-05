@@ -22,7 +22,6 @@ wp.domReady(() => {
   // sometime unregister don't work without that
   window._wpLoadBlockEditor.then(() => {
     console.log('Gutenberg ready !')
-    initExtension()
     // remove styles
     // wp.blocks.unregisterBlockStyle('core/button', [
     //   'default',

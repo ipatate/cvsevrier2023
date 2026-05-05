@@ -28,7 +28,7 @@ const setSidebarAttribute = (settings, name) => {
 
 wp.hooks.addFilter(
   'blocks.registerBlockType',
-  'mouss-films/set-sidebar-attribute-gallery',
+  'cvsevrier/set-sidebar-attribute-gallery',
   setSidebarAttribute,
 )
 
@@ -47,9 +47,9 @@ const withSettings = wp.compose.createHigherOrderComponent((BlockEdit) => {
       <Fragment>
         <BlockEdit {...props} className={classname} />
         <InspectorControls>
-          <PanelBody title={__('Settings Styles', 'mouss-films')}>
+          <PanelBody title={__('Settings Styles', 'cvsevrier')}>
             <SelectControl
-                label={__('Type', 'mouss-films')}
+                label={__('Type', 'cvsevrier')}
                 value={type}
                 options={Object.keys(types).map((key) => ({
                     label: types[key],
@@ -85,6 +85,6 @@ const saveAttribute = (extraProps, blockType, attributes) => {
 
 wp.hooks.addFilter(
   'blocks.getSaveContent.extraProps',
-  'mouss-films/save-attribute-gallery',
+  'cvsevrier/save-attribute-gallery',
   saveAttribute,
 )
