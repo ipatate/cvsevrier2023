@@ -116,3 +116,7 @@ add_filter('gcc_list_iframes', function ($iframes) {
 
   return $iframes;
 }, 10, 1);
+
+
+add_filter( 'jetpack_ai_enabled', '__return_false' );
+add_filter( 'jetpack_disable_seo_tools', '__return_true' );
