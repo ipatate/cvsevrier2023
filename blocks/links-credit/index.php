@@ -1,7 +1,7 @@
 <div class="cvs-links-credit alignwide">
   <p class="p-0 m-0 has-text-align-center">
     Site créé avec passion par :
-    <a href="https://www.goodmotion.fr" title="développement WordPress Annecy" target="_blank">
+    <a href="https://goodmotion.dev" title="développement WordPress Annecy" target="_blank">
       Goodmotion, développement wordpress Annecy
     </a> |
     <a href="https://rando-annecy.com" title="Randonnées du mont Veyrier" target="_blank">
